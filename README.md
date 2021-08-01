@@ -43,9 +43,10 @@ Introducción
 La programación es una disciplina (de tantas hoy en día) que pertenece a la informática, ciencia que se dedica al análisis y transformación de datos e información a partir del uso de computadoras.
 En dicha disciplina se desarrollan algoritmos en un determinado lenguaje de programación, los cuales serán implementados en una computadora para de esa manera realizar los llamados programas.
 Algoritmo
-Un algoritmo es una secuencia finita y ordenada de instrucciones que deben ser seguidas en pos de resolver un problema.
+Un algoritmo es una secuencia finita y ordenada de instrucciones que deben ser seguidas en pos de resolver un problema. https://www.youtube.com/watch?v=i3J42rmbrBQ
+https://www.youtube.com/watch?v=kJCin3JwIBY
 Programa
-Un programa es, técnicamente hablando, uno o más (al menos uno) algoritmos de programación escrito en un lenguaje que puede ser interpretado y ejecutado por una computadora. En otras palabras, decimos que un programa es la solución a un problema, ya que cada vez que se requiere desde sumar números hasta realizar traducciones, grandes cálculos o enviar mensajes de texto, se recurre a un programa (o aplicación, o web, lo que corresponda).
+Un programa es, técnicamente hablando, uno o más (al menos uno) algoritmos de programación escrito en un lenguaje que puede ser interpretado y ejecutado por una computadora. En otras palabras, decimos que un programa es la solución a un problema, ya que cada vez que se requiere desde sumar números hasta realizar traducciones, grandes cálculos o enviar mensajes de texto, se recurre a un programa (o aplicación, o web, lo que corresponda). https://www.youtube.com/watch?v=xmbRFUy8fcc
 Existen distintos tipos de programas o aplicaciones (podemos decir que son sinónimos), por ejemplo:
 -       Programas de escritorio: Se ejecutan en windows, por ejemplo Word, Excel, el buscaminas.
 -       Programas web: Facebook, Mercado Libre, son aplicaciones o sistemas web.
@@ -68,9 +69,9 @@ Como ya dijimos, el Software es lo que le da vida a la computadora. Son los prog
 Existen más categorías y sub-categorías y además ciertas características adicionales como si son libres, o no, o si son open source, o multiplataforma, pero eso es para indagar en otro contexto.
 También podemos mencionar los “programas para programar”. Desde ya que hoy en día para poder desarrollar programas, vamos a necesitar una computadora, pero además vamos a necesitar uno o más (según corresponda) programas que nos sirvan para ello. Hay aplicaciones específicamente preparadas para, justamente, desarrollar otras aplicaciones, en definitiva, para programar. Estas aplicaciones se suelen conocer como IDE, de sus siglas en inglés "Entorno de Desarrollo Integrado".
 Dependiendo de lo que quisiéramos programar, será la aplicación que deberíamos utilizar, y esto aplica del mismo modo para la tecnología o lenguaje de programación a utilizar.
-Reproducir Vídeo
+https://www.youtube.com/watch?v=_rl4vXVgoyE
  
-Reproducir Vídeo
+https://www.youtube.com/watch?v=wvJv1CDptvc
 Tipos de datos
 Como veremos más adelante, al programar no solo hay que escribir en un lenguaje determinado, sino que vamos a tener que utilizar muchas herramientas distintas, dentro de la propia programación, que iremos adquiriendo a medida que vayamos avanzando. Una de esas herramientas y de la que más vamos a hablar y utilizar de entrada (y para siempre si seguís con la programación) es la variable.
 Una variable, técnicamente hablando, un espacio en la memoria de la computadora destinado a ser utilizado por nuestro programa para poder guardar un dato. La variable tiene ciertas características como que debe contar con un nombre, que puede guardar un solo dato a la vez (el mismo puede ir cambiando, de allí su nombre) y que debe tener un tipo. Este tipo se refiere a qué es lo que precisamente va a guardar esa variable. Los primeros tipos que aprendemos son los más basicos y elementales pero que nos acompañarán, junto a las variables, en toda la vida dentro de la programación. Estos tipos son:
@@ -79,10 +80,13 @@ Una variable, técnicamente hablando, un espacio en la memoria de la computadora
 -       Char para guardar letras.
 -       Bool para guardar verdadero o falso (que es lo mismo a 1 o 0 respectivamente.
 Que le asignemos un tipo de dato a una variable afecta y tiene una relevancia puntual. Si estoy creando una variable de tipo entera, la misma solamente podrá guardar valores enteros. Qué sucederá si quiero guardarle un número con coma? Bueno, dependiendo del momento, el lenguaje o la operación, podrá dar error o bien podrá redondear el valor quitando los decimales y quedándose solo con la parte entera. Ninguno de los escenarios serían pertinentes en nuestro programa. Lo ideal sería que si la variable solo admite valores enteros, pues que se la use con valores enteros.
-Reproducir Vídeo
-Reproducir Vídeo
+https://www.youtube.com/watch?v=kJ2vUwgxzSY
+
+https://www.youtube.com/watch?v=IfvTgaMX4J4
 
 Ejercicios 1
+https://www.youtube.com/watch?v=8ANRCYtveMI
+https://www.youtube.com/watch?v=Bm3X8eHVv-s
 Esta unidad es más teórica introductoria que para ejercitar. Por eso el siguiente ejercicio va a ser más que nada para que testeemos que el entorno quedó configurado correctamente y que estamos en condiciones para comenzar a programar.
 1. Para este primer ejercicio deberás crear tu primer programa que emita en pantalla "Hola Mundo".
 Adicionalmente, podés hacer las modificaciones correspondientes para que el programa emita "Bienvenido Juanito", donde "Juanito" puede ser tu nombre. 
