@@ -230,3 +230,35 @@ Para cada ejercicio deberás escribir el código correspondiente y probar su fun
 4. Una casa de computación paga a sus empleados un sueldo fijo de ARS15000 más una comisión del 5% sobre el total facturado por cada empleado. Hacer un programa para ingresar el total facturado por un empleado y que luego calcule y emita por pantalla el sueldo total a cobrar por el mismo.
 5. Hacer un programa para ingresar por teclado las tres notas de exámenes de un alumno y luego calcule y emita por pantalla el promedio final.
 
+1) using System;
+
+namespace sumar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Mi app de sumar
+            //paso cero pedirle guardar valores en variables
+            //pedir 2 numeros, sumar dos numeros y devolver el resultado
+            //para pedir datos en pantalla
+            //Console.WriteLine() escribe una linea; Console.Write() escribe lo siguiente;
+            int numero1;
+            int numero2;
+            int resultado; 
+            Console.WriteLine("Ingrese un numero");
+            numero1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ingrese otro numero");
+            numero2 = int.Parse(Console.ReadLine());
+            
+            //Operacion
+            resultado = numero1 + numero2;
+            Console.WriteLine("Gracias por usar la aplicacion");
+            Console.WriteLine("Los nros ingresados son:");
+            Console.WriteLine(numero1);
+            Console.WriteLine(numero2);
+            Console.WriteLine("El resultado es: " + resultado);
+        }
+    }
+}
