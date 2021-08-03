@@ -170,3 +170,54 @@ La de proceso, procesa los valores de entrada
 El inicio y el fin marcan el comienzo y final de un programa.
 El if condicional:
 Ejercicios resueltos: guía 1 empeza a programar
+Integral numeric types (C# reference)
+The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.
+ 
+In all of the table rows except the last two, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. The keyword and .NET type name are interchangeable. For example, the following declarations declare variables of the same type:
+int a = 123;
+System.Int32 b = 123;
+The nint and nuint types in the last two rows of the table are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword and the .NET type are not interchangeable. The compiler provides operations and conversions for nint and nuint as integer types that it doesn't provide for the pointer types System.IntPtr and System.UIntPtr. For more information, see nint and nuint types.
+The default value of each integral type is zero, 0. Each of the integral types except the native-sized types has MinValue and MaxValue constants that provide the minimum and maximum value of that type.
+Use the System.Numerics.BigInteger structure to represent a signed integer with no upper or lower bounds.
+Integer literals
+Integer literals can be
+•	decimal: without any prefix
+•	hexadecimal: with the 0x or 0X prefix
+•	binary: with the 0b or 0B prefix (available in C# 7.0 and later)
+The following code demonstrates an example of each:
+var decimalLiteral = 42;
+var hexLiteral = 0x2A;
+var binaryLiteral = 0b_0010_1010;
+The preceding example also shows the use of _ as a digit separator, which is supported starting with C# 7.0. You can use the digit separator with all kinds of numeric literals.
+The type of an integer literal is determined by its suffix as follows:
+•	If the literal has no suffix, its type is the first of the following types in which its value can be represented: int, uint, long, ulong.
+ Note
+Literals are interpreted as positive values. For example, the literal 0xFF_FF_FF_FF represents the number 4294967295 of the uint type, though it has the same bit representation as the number -1 of the int type. If you need a value of a certain type, cast a literal to that type. Use the unchecked operator, if a literal value cannot be represented in the target type. For example, unchecked((int)0xFF_FF_FF_FF) produces -1.
+•	If the literal is suffixed by U or u, its type is the first of the following types in which its value can be represented: uint, ulong.
+•	If the literal is suffixed by L or l, its type is the first of the following types in which its value can be represented: long, ulong.
+ Note
+You can use the lowercase letter l as a suffix. However, this generates a compiler warning because the letter l can be confused with the digit 1. Use L for clarity.
+•	If the literal is suffixed by UL, Ul, uL, ul, LU, Lu, lU, or lu, its type is ulong.
+If the value represented by an integer literal exceeds UInt64.MaxValue, a compiler error CS1021 occurs.
+If the determined type of an integer literal is int and the value represented by the literal is within the range of the destination type, the value can be implicitly converted to sbyte, byte, short, ushort, uint, ulong, nint or nuint:
+byte a = 17;
+byte b = 300;   // CS0031: Constant value '300' cannot be converted to a 'byte'
+As the preceding example shows, if the literal's value is not within the range of the destination type, a compiler error CS0031 occurs.
+You can also use a cast to convert the value represented by an integer literal to the type other than the determined type of the literal:
+var signedByte = (sbyte)42;
+var longVariable = (long)42;
+Conversions
+You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit. Otherwise, you need to use a cast expression to perform an explicit conversion. For more information, see Built-in numeric conversions.
+C# language specification
+For more information, see the following sections of the C# language specification:
+•	Integral types
+•	Integer literals
+See also
+•	C# reference
+•	Value types
+•	Floating-point types
+•	Standard numeric format strings
+•	Numerics in .NET
+Feedback
+
+
