@@ -394,5 +394,94 @@ Hacer un programa para ingresar un importe de venta y luego muestre por pantalla
 4. Hacer un programa para ingresar cuatro números distintos y luego mostrar por pantalla el menor de ellos.
 5. Hacer un programa para ingresar cuatro números y luego mostrar por pantalla cuáles son mayores a 100.
 
+1)   int numero;
+            numero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese un numero");
+            if(numero > 10) {
+                Console.WriteLine("El numero ingresado es mayor a 10");
+            }
+            else {
+                Console.WriteLine("El numero ingresado no es mayor a 10");
+            }
+
+        }
+    }
+}
+
+2)
+
+
+int positivo;
+            Console.WriteLine("Ingrese un numero");
+            positivo = int.Parse(Console.ReadLine());
+            if (positivo > 0) {
+                Console.WriteLine("Positivo");
+            }
+            if (positivo < 0) {
+                Console.WriteLine("Negativo");
+            }
+            else (positivo == 0) {
+                Console.WriteLine("Cero");
+            }
+3)
+
+
+
+
+
+int descuento;
+            Console.WriteLine("Ingrese el importe");
+            descuento = int.Parse(Console.ReadLine());
+            if(descuento < 1000) {
+                Console.WriteLine(descuento);
+            }
+            else if(descuento >= 1000 && descuento < 5000) {
+                Console.WriteLine(descuento * 0.1);
+            }
+            else {
+                Console.WriteLine(descuento * 0.18);
+            }
+
+4)
+int n1, n2, n3, n4;
+            Console.WriteLine("Ingrese cuatro numeros:");
+            n1 = int.Parse(Console.ReadLine());
+            n2 = int.Parse(Console.ReadLine());
+            n3 = int.Parse(Console.ReadLine());
+            n4 = int.Parse(Console.ReadLine());
+            if(n1 < n2 && n1 < n3 && n1 < n4) {
+                Console.WriteLine(n1);
+            }
+            else if(n2 < n1 && n2 < n3 && n2 < n4) {
+                Console.WriteLine(n2);
+            }
+            else if(n3 < n1 && n3 < n2 && n3 < n4) {
+                Console.WriteLine(n3);
+            }
+            else if(n4 < n1 && n4 < n2 && n4 < n3) {
+                Console.WriteLine(n4);
+            }
+
+5)
+int uno, dos, tres, cuatro;
+            Console.WriteLine("Ingrese cuatro numeros:");
+            uno = Console.ReadLine();
+            dos = Console.ReadLine();
+            tres = Console.ReadLine();
+            cuatro = Console.ReadLine();
+            if(uno > 100) {
+                Console.WriteLine(uno);
+            }
+            else if(dos > 100) {
+                Console.WriteLine(dos);
+            }
+            else if(tres > 100) {
+                Console.WriteLine(tres);
+            }
+            else if(cuatro > 100) {
+                Console.WriteLine(cuatro);
+            }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Clase 4:
+
 
 
