@@ -266,21 +266,21 @@ namespace sumar
             Console.WriteLine("El cubo del numero ingresado es:");
             Console.WriteLine(numerox * numerox * numerox);
             //Ejercicio 3: Hacer un programa que permita ingresar los kilómetros existentes entre dos ciudades y la velocidad promedio de un vehículo. Calcular y emitir por pantalla el tiempo aproximado que demandará llegar de un punto a otro teniendo en cuenta los datos ingresados.
-            int diferencia;
+            float diferencia;
             Console.WriteLine("Ingrese los Km de diferencia entre las dos ciudades:");
-            diferencia = int.Parse(Console.ReadLine());
+            diferencia = float.Parse(Console.ReadLine());
             
             Console.WriteLine("Ingrese la velocidad promedio");
-            int km;
-            km = int.Parse(Console.ReadLine());
+            float km;
+            km = float.Parse(Console.ReadLine());
             Console.WriteLine("Llegara al punto de destino en:");
             Console.WriteLine(diferencia / km);
             //Ejercicio 4: Una casa de computación paga a sus empleados un sueldo fijo de ARS15000 más una comisión del 5% sobre el total facturado por cada empleado. Hacer un programa para ingresar el total facturado por un empleado y que luego calcule y emita por pantalla el sueldo total a cobrar por el mismo.
-            int total;
+            float total;
             Console.WriteLine("Ingrese el total facturado");
             total = int.Parse(Console.ReadLine());
-            int comision = total * 0.05;
-            int sueldo = comision + 15000;
+            float comision = total * 0.05;
+            float sueldo = comision + 15000;
             Console.WriteLine("El sueldo total es:");
             Console.WriteLine(sueldo);
             //Ejercicio 5: Hacer un programa para ingresar por teclado las tres notas de exámenes de un alumno y luego calcule y emita por pantalla el promedio final.
@@ -298,3 +298,101 @@ namespace sumar
     }
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 3: Condicionales
+Módulo 3 - Lectura
+Condicionales
+A ésta altura ya hemos desarrollado nuestros primeros programas. Los mismos se encargan de realizar operaciones matemáticas sencillas solicitando datos a un usuario y luego mostrando un resultado en pantalla. Las operaciones no tienen por qué ser sencillas, vimos que podemos combinar los operadores aritméticos y hacer uso de paréntesis (como en matemática) para separar en términos y demás con el fin de llegar a armar operaciones un poco más complejas que una simple suma.
+Sin embargo, todos estos programas siguen siendo lineales, tengan tres líneas de código o cien. Quiere decir que comienzan por la primera instrucción y recorre absolutamente cada línea ejecutando todo lo que se encuentre en su camino hasta concluir.
+Existen momentos en los que vamos a querer ejecutar instrucciones bajo determinados escenarios; en determinadas circunstancias o en situaciones específicas exceptuando de ese modo un escenario alterno. Por ejemplo: calcular y mostrar el resultado de una suma si el primer número ingresado es mayor a 10.
+Ya hicimos programas que piden y suman dos números, pero ahora solamente hay que sumarlos si el primer ingreso es mayor a 10, de otro modo, no hay que hacerlo. 
+Para esto, y muchas otras cosas, existe una herramienta en programación denominada "If", del idioma inglés "si". Se trata de una herramienta que nos permitirá confeccionar condiciones (realizar preguntas) que tendrán como resultado posible SI o NO y dependiendo de cuál sea la respuesta podremos programar distintos sets de instrucciones.
+Una vez que se establece una condición If, lo que sucede es que se bifurca, se divide el flujo de ejecución del programa, creando, por así decirlo, dos "dimensiones" o caminos alternativos. El programa deberá elegir uno de esos caminos a seguir, no ejecutará los dos al mismo tiempo ni primero uno y luego el otro. No. Se evalúa la condición, y si el resultado es SI (recordemos que los posibles son SI o NO, o true o false, o 1 o 0), entonces se ejecutará el set de instrucciones programado en ese camino; pero si la respuesta a la pregunta es NO, entonces se ejecutará el otro set de instrucciones (en caso de haberlo, el NO puede no tener nada para ejecutar).
+
+Lo podemos ver un poco más en detalle y de manera gráfica en el siguiente video:
+Link de youtube: 
+Ejemplo en código
+Por otro lado, podemos ver el código del ejemplo antes mencionado;
+int a, b, c;
+Console.WriteLine("ingrese un nro");
+a = int.Parse(Console.ReadLine());
+Console.WriteLine("ingrese un nro");
+b = int.Parse(Console.ReadLine());
+If(a > b) {
+   c = a + b;
+   Console.WriteLine("El resultado es: " + c);
+}
+Console.ReadLine();
+Explicado paso a paso:
+1.	Declaramos las variables.
+2.	Mostramos un cartel para pedir el primer número.
+3.	Leemos y guardamos el primer número.
+4.	Mostramos otro cartel para pedir el siguiente número. 
+5.	Leemos y guardamos el segundo número.
+6.	Establecemos la condición IF. En la misma preguntamos si el contenido de la variable "a" es mayor a 10.
+7.	Si es mayor a 10, se ejecutará el contenido siguiente encerrado entre llaves, sino no entra a ese set y sigue de largo.
+Algunas consideraciones a tener en cuenta:
+Formato de las condiciones
+Las condiciones están formadas, inicialmente, por tres partes: 
+•	Un valor.
+•	Un operador de comparación.
+•	Otro valor a ser comparado.
+En este caso el primer valor corresponde al contenido de la variable "a", mientras que el operador de comparación es ">" (mayor) y finalmente el segundo valor es el literal "10".
+Operadores relacionales
+Los operadores disponibles para construir condiciones lógicas se denominan relacionales, y son los siguientes:
+•	> mayor
+•	< menor
+•	>= mayor o igual
+•	<= menor o igual
+•	== igual (nótese que no es = a secas, son dos símbolos juntos para la igualdad)
+•	!= distinto
+
+Por ahora, solo podemos poner una condición por If. Es decir, una sola "valor condición valor"; con lo cual, deberías tener solamente dos valores y UN operador relacional, para que se entienda que es correcta la condición.
+Ejemplos
+Ejemplos correctos
+•	A > 10
+•	B < 12
+•	A != B
+•	C == 20
+Ejemplos incorrectos
+•	A > B < 10 en este caso tenemos dos operadores y tres valores. No es correcto.
+•	10 < 15 en este caso tenemos dos literales, no tiene sentido la condición pues siempre va a dar verdadero.
+
+Si se te ocurren otros ejemplos y no sabés si son correctos, podés postearlos en el Foro de dudas y los vemos.
+
+¿Verdadero o Falso?
+Hasta ahora vimos como hacer una condición y trabajar si la misma da como resultado true o no hacer nada si la misma da como resultado false. Por ejemplo:
+int edad = 21;
+if(edad > 18){
+   Console.WriteLine("Sos mayor");
+}
+En este caso muestra un cartel en pantalla si edad tiene un valor mayor a 18 y en caso contrario, no hace nada. Pero qué pasa si sí quisiéramos hacerlo? En ese caso lo que podemos hacer es escribir el bloque else, que, como te habrás dado cuenta, es opcional, ya que hasta ahora no lo habíamos hecho. 
+De este modo, siguiendo el mismo ejemplo, podemos mostrar un cartel que diga que sos menor si el valor no es mayor a 18, o sea, si la condición fue falsa.
+int edad = 17;
+if(edad > 18){
+   Console.WriteLine("Sos mayor");
+}
+else{
+   Console.WriteLine("Sos menor");
+}
+En este caso, como ahora a edad le asignamos el valor 17, en vez de ir por el verdadero del If, va a ir por el else, o sea, el falso. Tené en cuenta que le asignamos 17 a la variable. Y qué pasa si le hubiésemos asignado 18? En ese caso qué resultado daría el If, verdadero o falso? Teniendo en cuenta lo que se pregunta específicamente en el If y no lo que sepamos de cuándo sos mayor de edad. Si tenés dudas sobre cuál es la respuesta correcta podés probar el código o consultarlo en el Foro de dudas.
+
+Bueno, comenzamos con IF. En realidad en este video primero resolvemos algunos ejercicios anteriores, creo que ya te lo había compartido antes. Pero ahora, lo relevante es el comienzo de la explicación del condicional IF y comenzar a trabajar con dicha herramienta.
+Link de youtube:
+Luego de aprender lo básico, obviamente viene la hora de hacer ejercicios para comenzar a entrenar lo recién visto. Así que acá resolvemos algunos ejercicios. Y desde ya, seguimos sumando algún que otro dato de color, como también micro temas y datos relevantes!
+Link de youtube:
+Ejercicios 3
+Bueno, ya entramos en condicionales, así que ahora sí, vamos a codificar ejercicios con condiciones.
+Lean atentamente y codifiquen las soluciones. Si van apareciendo dudas, me van consultando.
+
+1. Hacer un programa para ingresar un número y luego se emita por pantalla un cartel aclaratorio si “Es mayor a 10” o “No es mayor a 10”.
+2. Hacer un programa para ingresar un número y luego se emita un cartel por pantalla “Positivo” si el número es mayor a cero, “Negativo” si el número es menor a cero o “Cero” si el número es igual a cero.
+3. Una casa de video juegos otorga un descuento dependiendo del importe de la compra realizada según los siguientes valores:
+•	Si el importe es menor a ARS 1000, no hay descuento.
+•	Si el importe es ARS 1000 o más pero menor a ARS 5000, aplica un descuento del 10%.
+•	Si el importe es ARS 5000 o más, aplica un descuento del 18%.
+Hacer un programa para ingresar un importe de venta y luego muestre por pantalla el importe final con el descuento que corresponda.
+4. Hacer un programa para ingresar cuatro números distintos y luego mostrar por pantalla el menor de ellos.
+5. Hacer un programa para ingresar cuatro números y luego mostrar por pantalla cuáles son mayores a 100.
+
+
+
