@@ -219,7 +219,7 @@ See also
 •	Standard numeric format strings
 •	Numerics in .NET
 Feedback
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Ejercicios 2
 Leer atentamente y resolver!
 Para cada ejercicio deberás escribir el código correspondiente y probar su funcionamiento.
@@ -259,6 +259,42 @@ namespace sumar
             Console.WriteLine(numero1);
             Console.WriteLine(numero2);
             Console.WriteLine("El resultado es: " + resultado);
+            //Ejercicio 2: Hacer un programa para solicitar por teclado un número y luego devolver su valor elevado al cubo.
+            int numerox;
+            Console.WriteLine("Ingrese un numero");
+            numerox = int.Parse(Console.ReadLine());
+            Console.WriteLine("El cubo del numero ingresado es:");
+            Console.WriteLine(numerox * numerox * numerox);
+            //Ejercicio 3: Hacer un programa que permita ingresar los kilómetros existentes entre dos ciudades y la velocidad promedio de un vehículo. Calcular y emitir por pantalla el tiempo aproximado que demandará llegar de un punto a otro teniendo en cuenta los datos ingresados.
+            int diferencia;
+            Console.WriteLine("Ingrese los Km de diferencia entre las dos ciudades:");
+            diferencia = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Ingrese la velocidad promedio");
+            int km;
+            km = int.Parse(Console.ReadLine());
+            Console.WriteLine("Llegara al punto de destino en:");
+            Console.WriteLine(diferencia / km);
+            //Ejercicio 4: Una casa de computación paga a sus empleados un sueldo fijo de ARS15000 más una comisión del 5% sobre el total facturado por cada empleado. Hacer un programa para ingresar el total facturado por un empleado y que luego calcule y emita por pantalla el sueldo total a cobrar por el mismo.
+            int total;
+            Console.WriteLine("Ingrese el total facturado");
+            total = int.Parse(Console.ReadLine());
+            int comision = total * 0.05;
+            int sueldo = comision + 15000;
+            Console.WriteLine("El sueldo total es:");
+            Console.WriteLine(sueldo);
+            //Ejercicio 5: Hacer un programa para ingresar por teclado las tres notas de exámenes de un alumno y luego calcule y emita por pantalla el promedio final.
+            int nota1;
+            int nota2;
+            int nota3;
+            Console.WriteLine("Ingrese sus 3 notas:");
+            int nota1 = int.Parse(Console.ReadLine());
+            int nota2 = int.Parse(Console.ReadLine());
+            int nota3 = int.Parse(Console.ReadLine());
+            int promedio = (nota1 + nota2 + nota3)/3;
+            Console.WriteLine("Su promedio es: ");
+            Console.WriteLine(promedio);
         }
     }
 }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
