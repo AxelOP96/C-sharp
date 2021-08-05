@@ -481,7 +481,175 @@ int uno, dos, tres, cuatro;
             else if(cuatro > 100) {
                 Console.WriteLine(cuatro);
             }
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Clase 4:
+            
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 4:
 
+Módulo 4 - Lectura
+En este módulo vamos a ver varias herramientas complementarias a la hora de trabajar con condicionales. 
 
+Ya sabemos cómo trabaja el If y cuál es el modo correcto de construir condiciones lógicas a partir del uso de operadores relacionales. 
+
+Sin embargo, lo que vimos hasta ahora es que cada If puede tener una única condición y que si, por ejemplo, quisiéramos realizar dos preguntas, lo tenemos que hacer en dos Ifs separados.
+
+Bueno, hay una herramienta que nos brinda la posibilidad de crear más de una condición en un mismo If, y esa herramienta se llama: operador lógico.
+
+Operadores lógicos
+Existen dos operadores lógicos, también conocidos como operadores de concatenación lógica.
+
+OR cuyo símbolo corresponde a || (doble pipe).
+AND cuyo símbolo corresponde a && (doble ampersand).
+AND
+El and es el operador "y". Al usar este operador para concatenar dos o más condiciones lógicas, el comportamiento será el siguiente:
+
+si todas las condiciones dan verdadero, entonces el If dará como resultado verdadero.
+
+si una condición da falso, entonces el If dará como resultado falso.
+
+Esto se debe a que al usar el operador AND para concatenar las condiciones, lo que estamos indicando es que queremos que se consulta si se cumple la condición 1 Y se cumple la condición 2 Y se cumple la condición 3 Y.... etc. Estamos buscando saber si se cumplen todas; con lo cual, si se cumplen todas, dará verdadero PERO, con UNA condición que no se cumpla, entonces todo el If dará como resultado falso.
+
+OR
+Con el operador "o" pasa exactamente lo contrario. Lo que se busca es el verdadero si se cumple la condición 1 o se cumple la condición 2 o se cumple la condición 3 o... etc. En el caso del operador OR, el resultado será verdadero cuando cualquiera de las condiciones dentro del If de como resultado verdadero. Ahora, cuándo el If se irá hacia el falso? Cuando todas las condiciones den falso.
+
+NOT
+Existe un tercer operador lógico que es el operador de negación, cuyo símbolo es el "!" (signo de admiración). Este operador sirve para invertir (para negar) el resultado de una condición lógica. De este modo, si la condición diera verdadero, el Not haría que se vaya para el falso.
+
+Por ejemplo:
+
+int a = 10
+if(!a==10){
+   Console.WriteLine("no es igual a 10");
+}
+else{
+   Console.WriteLine("ES igual a 10");
+}
+Contadores
+Un contador no es más que una variable que vamos a usar para realizar un conteo de algo. Por ejemplo: cuántas personas son mayores de 18, o cuántas personas se sacaron un 10 en la materia, etc.
+
+Todo conteo comienza desde un valor conocido, generalmente desde cero; es por eso que un de las prácticas a tener en cuenta a la hora de contar es inicializar la variable en cero. Inicializar significa dar un valor inicial. De ese modo nos garantizamos que el conteo arranca desde un valor determinado.
+
+Contar es agregarle una unidad a una variable. Esto se puede hacer del siguiente modo:
+
+int a = 0;
+a = a + 1;
+a = a + 1;
+a = a + 1;
+Console.WriteLine(a);
+Console.ReadLine();
+Si se observa, en este caso el valor de "a" comienza en cero y luego se realiza tres veces una suma de una unidad sobre la misma. Esto realiza un efecto de conteo ya que se va sumando de a uno. Al final, al mostrar el contenido de "a", el mismo será 3.
+
+La idea de estos conteos es realizarlos, como se mencionó antes, de manera condicional, de modo tal que antes de contar se realizaría una comparación para identificar si hay que contar o no.
+
+Por ejemplo: evaluar tres edades y mostrar por pantalla cuántas son mayores a 18.
+
+int a = 16, b = 20, c = 33;
+int con = 0;
+if(a > 18){
+   con = con + 1;
+}
+if(b > 18){
+   con = con + 1;
+}
+if(c > 18){
+   con = con + 1;
+}
+Console.WriteLine("La cantidad de mayores es: " + con);
+Console.ReadLine();
+En este caso, el resultado por pantalla sería 2.
+
+Operador de incremento
+Existe un operador que nos permite simplificar el conteo aplicado a una variable. Ese operador se denomina operador de incremento, cuyo símbolo se representa con un doble más: ++
+
+Con este operador, pasamos de tener
+
+con = con + 1
+a tener simplemente 
+
+con++
+El ++ lo que hará es incrementar una unidad a cualquiera sea la variable y contenido que tenga a su izquierda. También existe su contraparte que corresponde a "--" (menos menos) que lo que hace es exactamente lo opuesto: disminuir una unidad de la variable a la que se asigne.
+
+Nótese que en este caso no aplica el uso de la asignación (operador =), ya que la misma se desarrolla de manera implícita.
+
+Acumuladores
+Un acumulador funciona de manera similar a un contador. La diferencia es que en este caso no se suma de a una unidad sino que se suman distintos valores y lo que escriba, se irá agregando a lo ya existente. Por ejemplo:
+
+int a = 0;
+a = a + 10;
+a = a + 3;
+a = a + 5;
+Console.WriteLine(a);
+Console.ReadLine();
+En este caso el resultado en pantalla será 18, la suma de todos los valores.
+
+De la misma manera que el conteo, los acumuladores se suelen usar condicionalmente; y también contamos con un operador especial para resumir la instrucción. El operador de acumulación: +=.
+
+De este modo, pasamos de tener:
+
+a = a + 10;
+a tener
+
+a+=10;
+Son instrucciones que hace exactamente lo mismo, pero de una manera más compacta de escribir. También existe el operador para disminuir, y el mismo es el "-=".
+
+El Switch
+El switch es una herramienta de decisión que nos permite evaluar el contenido de una variable u operación y, a diferencia del If que nos permite solo una de dos opciones posibles (verdadero o falso), nos permite setear múltiples opciones posibles para el valor que se esté evaluando. Desde ya que una vez decidido el valor, se ejecutará un solo camino como también sucede con el If.
+
+La diferencia principal, además de la cantidad de opciones, es que e switch no hace uso de los operadores relacionales. Simplemente se evalúa un valor y se elige un camino posible dependiendo de lo que se haya evaluado.
+
+Por ejemplo: haremos un switch que reciba una variable y si la misma contiene un 1, mostrar Hola en pantalla, si tiene 2, mostrar Chau, si tiene 3 mostrar Blanco y si tiene 4 mostrar Negro.
+
+int a = 3;
+Switch(a){
+case 1: 
+Console.WriteLine("Hola");
+break;
+case 2:
+Console.WriteLine("Chau");
+break;
+case 3:
+Console.WriteLine("Blanco");
+break;
+case 4:
+Console.WriteLine("Negro");
+break;
+default:
+Console.WriteLine("Opción incorrecta");
+break;
+}
+Console.ReadLine();
+Este programa muestra por pantalla "Blanco", como pueden ver (también pueden copiar y probar el código en ejecución). Pueden ver dos particularidades: por un lado, contamos dentro de cada "case" el valor posible. En este caso cada "case" es cada brazo del Switch. Pero además, cada case al final cuenta con un break, que determina el final del mismo. Por otro lado, contamos con un último "case" denominado "default", que es por donde pasará la ejecución si el valor contenido en la variable que está siendo analizada no se corresponde con ninguna de las opciones seteadas.
+Ejercicios 4
+Bueno, ya entramos en condicionales, así que ahora sí, vamos a codificar ejercicios con condiciones.
+
+Lean atentamente y codifiquen las soluciones. Si van apareciendo dudas, me van consultando.
+
+1. Hacer un programa que solicite el ingreso de dos números y luego calcular:
+
+La resta si el primero es mayor que el segundo.
+La suma si son iguales.
+El producto si el primero es menor.
+Se deberá emitir un cartel por pantalla con el resultado correspondiente.
+
+2. Un importante negocio de desinfectante líquido realiza descuentos dependiendo de la cantidad de litros vendidos según la siguiente escala:
+
+Si vende menos de 100 litros, no hay descuento.
+Si vende entre 101 y 300 litros, el descuento es del 10%.
+Si vende entre 301 y 500 litros, el descuento es del 15%.
+Finalmente, si la venta es de más de 500 litros, el descuento es del 25%.
+Hacer un programa que solicite el ingreso del importe total de la venta y la cantidad de litros vendidos y calcule y emita el importe con el descuento  aplicado..
+
+3. Una importante marca de computadoras permite elegir cierta configuración del equipo a comprar. Para ello existe la siguiente escala de precios:
+
+i5 (1)	i7 (2)	i9 (3)
+8 RAM (1)	USD 800	USD 900	USD 1200
+16 RAM (2)	USD 900	USD 1000	USD 1400
+32 RAM (3)	USD 1000	USD 1400	USD 2000
+Además, el equipo viene con un disco que permite almacenar 500 GB de información y que se puede ampliar a 1 TB si así lo desea, lo cual tiene un costo  adicional de USD 300. Hacer un programa que solicite la opción de procesador, la opción de memoria  RAM, y si extiende el disco o no (ingresa 1 para extender y 0 para no extender) y calcule y emita por pantalla el monto de la máquina seleccionada.
+
+4. Hacer un programa para ingresar tres números y emitir un cartel aclaratorio si la suma de los dos primeros es mayor al producto del segundo con el tercero.
+
+5. Hacer un programa para ingresar 4 números. Luego analizar e informar por pantalla si los mismos se encuentran ordenados de forma decreciente .
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 5:
 
