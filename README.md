@@ -731,6 +731,22 @@ break;
 }
 Console.ReadLine();
 Este programa muestra por pantalla "Blanco", como pueden ver (también pueden copiar y probar el código en ejecución). Pueden ver dos particularidades: por un lado, contamos dentro de cada "case" el valor posible. En este caso cada "case" es cada brazo del Switch. Pero además, cada case al final cuenta con un break, que determina el final del mismo. Por otro lado, contamos con un último "case" denominado "default", que es por donde pasará la ejecución si el valor contenido en la variable que está siendo analizada no se corresponde con ninguna de las opciones seteadas.
+
+
+Videos 4
+En este video seguimos resolviendo ejercicios pero en este caso sumando unos detalles más: los operadores lógicos, o concatenadores lógicos OR y AND (|| y && respectivamente).
+
+Además sumamos los conceptos de Acumulador y Contador.
+
+https://www.youtube.com/watch?v=cwonYFylSVk
+
+Resolvemos algunos ejercicios haciendo uso de estos conceptos; https://www.youtube.com/watch?v=Ck_AlU2x5nc
+
+Y finalmente, para cerrar la unidad de Condicionales 2, vemos una nueva herramienta: El Switch.
+
+https://www.youtube.com/watch?v=6hj-3F-s6ks
+
+
 Ejercicios 4
 Bueno, ya entramos en condicionales, así que ahora sí, vamos a codificar ejercicios con condiciones.
 
