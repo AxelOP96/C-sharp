@@ -38,15 +38,27 @@ Uff, listo, ejecutaste tu primer programa.
 
 Te repito que esto lo vamos a ver y varias veces clase a clase. Pero siempre tendrás esta guía paso a paso o para anticiparte o para venir. a consultar cuando necesites.
 Cualquier cosa, me consultás!
+
 http://youtube.com/watch?v=s6i5I1b4y-I&utm_source=youtube.com&utm_medium=short_domains&utm_campaign=ssyoutube.com&a_ts=1626454393.643
+
 Introducción
 La programación es una disciplina (de tantas hoy en día) que pertenece a la informática, ciencia que se dedica al análisis y transformación de datos e información a partir del uso de computadoras.
 En dicha disciplina se desarrollan algoritmos en un determinado lenguaje de programación, los cuales serán implementados en una computadora para de esa manera realizar los llamados programas.
 Algoritmo
-Un algoritmo es una secuencia finita y ordenada de instrucciones que deben ser seguidas en pos de resolver un problema. https://www.youtube.com/watch?v=i3J42rmbrBQ
+Un algoritmo es una secuencia finita y ordenada de instrucciones que deben ser seguidas en pos de resolver un problema. 
+
+https://www.youtube.com/watch?v=i3J42rmbrBQ
+
+
 https://www.youtube.com/watch?v=kJCin3JwIBY
+
+
 Programa
-Un programa es, técnicamente hablando, uno o más (al menos uno) algoritmos de programación escrito en un lenguaje que puede ser interpretado y ejecutado por una computadora. En otras palabras, decimos que un programa es la solución a un problema, ya que cada vez que se requiere desde sumar números hasta realizar traducciones, grandes cálculos o enviar mensajes de texto, se recurre a un programa (o aplicación, o web, lo que corresponda). https://www.youtube.com/watch?v=xmbRFUy8fcc
+Un programa es, técnicamente hablando, uno o más (al menos uno) algoritmos de programación escrito en un lenguaje que puede ser interpretado y ejecutado por una computadora. En otras palabras, decimos que un programa es la solución a un problema, ya que cada vez que se requiere desde sumar números hasta realizar traducciones, grandes cálculos o enviar mensajes de texto, se recurre a un programa (o aplicación, o web, lo que corresponda). 
+
+https://www.youtube.com/watch?v=xmbRFUy8fcc
+
+
 Existen distintos tipos de programas o aplicaciones (podemos decir que son sinónimos), por ejemplo:
 -       Programas de escritorio: Se ejecutan en windows, por ejemplo Word, Excel, el buscaminas.
 -       Programas web: Facebook, Mercado Libre, son aplicaciones o sistemas web.
@@ -69,7 +81,10 @@ Como ya dijimos, el Software es lo que le da vida a la computadora. Son los prog
 Existen más categorías y sub-categorías y además ciertas características adicionales como si son libres, o no, o si son open source, o multiplataforma, pero eso es para indagar en otro contexto.
 También podemos mencionar los “programas para programar”. Desde ya que hoy en día para poder desarrollar programas, vamos a necesitar una computadora, pero además vamos a necesitar uno o más (según corresponda) programas que nos sirvan para ello. Hay aplicaciones específicamente preparadas para, justamente, desarrollar otras aplicaciones, en definitiva, para programar. Estas aplicaciones se suelen conocer como IDE, de sus siglas en inglés "Entorno de Desarrollo Integrado".
 Dependiendo de lo que quisiéramos programar, será la aplicación que deberíamos utilizar, y esto aplica del mismo modo para la tecnología o lenguaje de programación a utilizar.
+
+
 https://www.youtube.com/watch?v=_rl4vXVgoyE
+
  
 https://www.youtube.com/watch?v=wvJv1CDptvc
 Tipos de datos
@@ -84,9 +99,16 @@ https://www.youtube.com/watch?v=kJ2vUwgxzSY
 
 https://www.youtube.com/watch?v=IfvTgaMX4J4
 
+
 Ejercicios 1
+
+
 https://www.youtube.com/watch?v=8ANRCYtveMI
+
+
 https://www.youtube.com/watch?v=Bm3X8eHVv-s
+
+
 Esta unidad es más teórica introductoria que para ejercitar. Por eso el siguiente ejercicio va a ser más que nada para que testeemos que el entorno quedó configurado correctamente y que estamos en condiciones para comenzar a programar.
 1. Para este primer ejercicio deberás crear tu primer programa que emita en pantalla "Hola Mundo".
 Adicionalmente, podés hacer las modificaciones correspondientes para que el programa emita "Bienvenido Juanito", donde "Juanito" puede ser tu nombre. 
@@ -118,9 +140,13 @@ El nombre no puede ser igual a una palabra reservada. Dependiendo del lenguaje d
 Console
 Palabra que usamos para invocar a la muestra de un mensaje en pantalla como vimos en el primer proyecto de ejemplo:
 Console.WriteLine("Hola Mundo");
-Reproducir Vídeo
 
-Reproducir Vídeo
+
+https://www.youtube.com/watch?v=1_xqLhsk9Ns
+
+
+https://www.youtube.com/watch?v=kJ2vUwgxzSY
+
 
 Operadores Aritméticos
 Son los primeros operadores que comenzaremos a utilizar. Estos son:
@@ -129,7 +155,9 @@ Son los primeros operadores que comenzaremos a utilizar. Estos son:
 •	* para multiplicar
 •	/ para dividir
 Estas son las operaciones básicas que el procesador ya conoce y que tenemos disponibles para utilizar. De allí para arriba, es decir, un cuadrado, un logaritmo, etc., etc., son operaciones que tendremos que construir a mano porque el procesador no las sabe. Es verdad que en la actualidad existen muchas cosas ya hechas las cuales podemos utilizar (se llaman librerías, las veremos más adelante), pero generalmente cuando se está comenzando en la programación, una de las primeras cosas se trata de recrear algunas de esas funcionalidades para entender cómo trabajan.
-Reproducir Vídeo
+
+
+https://www.youtube.com/watch?v=BbYo0eeBNUw
 
 
 Asignación
@@ -154,22 +182,38 @@ Finalmente, con WriteLine volvemos a leer, esta vez el valor que quedó guardado
 Y listo, ese es nuestro primer programa. Todos estos pasos que tenemos detallados aquí, los tenés súper explicados en el video "Primer Programa" que te sugiero que veas.
 Luego de todo esto, ya estamos en condiciones para seguir avanzando en la creación de otros programas de este tipo.
 Tenés algunos ejercicios para practicar. 
-Otra cosas interesantes que deberías saber
-Reproducir Vídeo
+Otra cosas interesantes que deberías saber:
 
 
-Reproducir Vídeo
+https://www.youtube.com/watch?v=wvJv1CDptvc
 
 
-Reproducir Vídeo
+https://www.youtube.com/watch?v=pju8moNrEHE
+
+
+https://www.youtube.com/watch?v=gk0FOyOOw5I
+
+
 Mi primer programa:
+
+https://www.youtube.com/watch?v=tgBDluKHcws
+
+
 Calculadora en diagrama de flujo.
 Figura de ingreso pide valores de entrada
 La de egreso muestra en pantalla
 La de proceso, procesa los valores de entrada
 El inicio y el fin marcan el comienzo y final de un programa.
-El if condicional:
-Ejercicios resueltos: guía 1 empeza a programar
+
+
+El if condicional: https://www.youtube.com/watch?v=TTvnrL1KUZM
+
+
+Ejercicios resueltos: guía 1 empeza a programar: https://www.youtube.com/watch?v=SvMQ6-Qlfos&t=134s
+
+
+Tipo de dato INT:
+
 Integral numeric types (C# reference)
 The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.
  
@@ -219,6 +263,63 @@ See also
 •	Standard numeric format strings
 •	Numerics in .NET
 Feedback
+
+Tipo de dato FLOAT:
+Floating-point numeric types (C# reference)
+The floating-point numeric types represent real numbers. All floating-point numeric types are value types. They are also simple types and can be initialized with literals. All floating-point numeric types support arithmetic, comparison, and equality operators.
+ 
+The default value of each floating-point type is zero, 0. Each of the floating-point types has the MinValue and MaxValue constants that provide the minimum and maximum finite value of that type. The float and double types also provide constants that represent not-a-number and infinity values. For example, the double type provides the following constants: Double.NaN, Double.NegativeInfinity, and Double.PositiveInfinity.
+The decimal type is appropriate when the required degree of precision is determined by the number of digits to the right of the decimal point. Such numbers are commonly used in financial applications, for currency amounts (for example, $1.00), interest rates (for example, 2.625%), and so forth. Even numbers that are precise to only one decimal digit are handled more accurately by the decimal type: 0.1, for example, can be exactly represented by a decimal instance, while there's no double or float instance that exactly represents 0.1. Because of this difference in numeric types, unexpected rounding errors can occur in arithmetic calculations when you use double or float for decimal data. You can use double instead of decimal when optimizing performance is more important than ensuring accuracy. However, any difference in performance would go unnoticed by all but the most calculation-intensive applications. Another possible reason to avoid decimal is to minimize storage requirements. For example, ML.NET uses float because the difference between 4 bytes and 16 bytes adds up for very large data sets. For more information, see System.Decimal.
+You can mix integral types and the float and double types in an expression. In this case, integral types are implicitly converted to one of the floating-point types and, if necessary, the float type is implicitly converted to double. The expression is evaluated as follows:
+•	If there is double type in the expression, the expression evaluates to double, or to bool in relational and equality comparisons.
+•	If there is no double type in the expression, the expression evaluates to float, or to bool in relational and equality comparisons.
+You can also mix integral types and the decimal type in an expression. In this case, integral types are implicitly converted to the decimal type and the expression evaluates to decimal, or to bool in relational and equality comparisons.
+You cannot mix the decimal type with the float and double types in an expression. In this case, if you want to perform arithmetic, comparison, or equality operations, you must explicitly convert the operands either from or to the decimal type, as the following example shows:
+double a = 1.0;
+decimal b = 2.1m;
+Console.WriteLine(a + (double)b);
+Console.WriteLine((decimal)a + b);
+You can use either standard numeric format strings or custom numeric format strings to format a floating-point value.
+Real literals
+The type of a real literal is determined by its suffix as follows:
+•	The literal without suffix or with the d or D suffix is of type double
+•	The literal with the f or F suffix is of type float
+•	The literal with the m or M suffix is of type decimal
+The following code demonstrates an example of each:
+double d = 3D;
+d = 4d;
+d = 3.934_001;
+
+float f = 3_000.5F;
+f = 5.4f;
+
+decimal myMoney = 3_000.5m;
+myMoney = 400.75M;
+The preceding example also shows the use of _ as a digit separator, which is supported starting with C# 7.0. You can use the digit separator with all kinds of numeric literals.
+You can also use scientific notation, that is, specify an exponent part of a real literal, as the following example shows:
+double d = 0.42e2;
+Console.WriteLine(d);  // output 42
+
+float f = 134.45E-2f;
+Console.WriteLine(f);  // output: 1.3445
+
+decimal m = 1.5E6m;
+Console.WriteLine(m);  // output: 1500000
+Conversions
+There is only one implicit conversion between floating-point numeric types: from float to double. However, you can convert any floating-point type to any other floating-point type with the explicit cast. For more information, see Built-in numeric conversions.
+C# language specification
+For more information, see the following sections of the C# language specification:
+•	Floating-point types
+•	The decimal type
+•	Real literals
+See also
+•	C# reference
+•	Value types
+•	Integral types
+•	Standard numeric format strings
+•	Numerics in .NET
+•	System.Numerics.Complex
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Ejercicios 2
 Leer atentamente y resolver!
@@ -309,7 +410,11 @@ Para esto, y muchas otras cosas, existe una herramienta en programación denomin
 Una vez que se establece una condición If, lo que sucede es que se bifurca, se divide el flujo de ejecución del programa, creando, por así decirlo, dos "dimensiones" o caminos alternativos. El programa deberá elegir uno de esos caminos a seguir, no ejecutará los dos al mismo tiempo ni primero uno y luego el otro. No. Se evalúa la condición, y si el resultado es SI (recordemos que los posibles son SI o NO, o true o false, o 1 o 0), entonces se ejecutará el set de instrucciones programado en ese camino; pero si la respuesta a la pregunta es NO, entonces se ejecutará el otro set de instrucciones (en caso de haberlo, el NO puede no tener nada para ejecutar).
 
 Lo podemos ver un poco más en detalle y de manera gráfica en el siguiente video:
-Link de youtube: 
+
+
+Link de youtube: https://www.youtube.com/watch?v=TTvnrL1KUZM&t=1s
+
+
 Ejemplo en código
 Por otro lado, podemos ver el código del ejemplo antes mencionado;
 int a, b, c;
@@ -377,9 +482,17 @@ else{
 En este caso, como ahora a edad le asignamos el valor 17, en vez de ir por el verdadero del If, va a ir por el else, o sea, el falso. Tené en cuenta que le asignamos 17 a la variable. Y qué pasa si le hubiésemos asignado 18? En ese caso qué resultado daría el If, verdadero o falso? Teniendo en cuenta lo que se pregunta específicamente en el If y no lo que sepamos de cuándo sos mayor de edad. Si tenés dudas sobre cuál es la respuesta correcta podés probar el código o consultarlo en el Foro de dudas.
 
 Bueno, comenzamos con IF. En realidad en este video primero resolvemos algunos ejercicios anteriores, creo que ya te lo había compartido antes. Pero ahora, lo relevante es el comienzo de la explicación del condicional IF y comenzar a trabajar con dicha herramienta.
-Link de youtube:
+
+
+Link de youtube: https://www.youtube.com/watch?v=TTvnrL1KUZM&t=1s
+
+
 Luego de aprender lo básico, obviamente viene la hora de hacer ejercicios para comenzar a entrenar lo recién visto. Así que acá resolvemos algunos ejercicios. Y desde ya, seguimos sumando algún que otro dato de color, como también micro temas y datos relevantes!
-Link de youtube:
+
+
+Link de youtube:https://www.youtube.com/watch?v=6B7oRyWqmxA
+
+
 Ejercicios 3
 Bueno, ya entramos en condicionales, así que ahora sí, vamos a codificar ejercicios con condiciones.
 Lean atentamente y codifiquen las soluciones. Si van apareciendo dudas, me van consultando.
