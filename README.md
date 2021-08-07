@@ -841,7 +841,11 @@ Hagamos en código el ejemplo de mostrar cinco veces el hola mundo pero escribie
 for(x = 0; x < 5; x++){
    Console.WriteLine("Hola mundo");
 }
-Reproducir Vídeo
+
+
+Link de youtube: https://www.youtube.com/watch?v=v3rHho4ticQ
+
+
 Ciclo While
 Ya conocemos el Ciclo FOR. El mismo nos permite, a partir de una configuración previamente establecida, repetir un conjunto de instrucciones siempre y cuando conozcamos la cantidad de veces que necesitamos que el mismo se ejecute. Hay ocasiones en las que no se conocerá la cantidad de veces que un algoritmo deberá ser ejecutado; en dichos casos se utiliza otro tipo de ciclo, denominado ciclo inexacto, que repetirá el conjunto de instrucciones dado dependiendo de una condición establecida. Existen básicamente dos tipos de ciclos inexactos en la programación. Por un lado el While y por otro lado en Do While.
 
@@ -862,9 +866,31 @@ int N = 0;
 do{
    n++;
 }while(n<10)
-Reproducir Vídeo
 
 
+Link de youtube: https://www.youtube.com/watch?v=HSUKndu5XAg
+
+
+Videos
+Arrancamos con ciclos! En el siguiente video vemos en qué consiste el ciclo FOR y cómo funciona paso a paso y súper detallado.
+
+
+Link de youtube: https://www.youtube.com/watch?v=v3rHho4ticQ
+
+
+Luego de entenderlo, vemos varios ejercicios para seguir mejorando la idea de iterar instrucciones.
+
+
+Link de youtube: https://www.youtube.com/watch?v=XXyXv6DR1xA
+
+
+Link de youtube: https://www.youtube.com/watch?v=AsRQmd9y6i8
+
+
+Link de youtube: https://www.youtube.com/watch?v=HSUKndu5XAg
+
+
+Link de youtube: https://www.youtube.com/watch?v=BX5DYuPfhOo
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Clase 6:
