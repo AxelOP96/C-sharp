@@ -911,3 +911,19 @@ Recordá siempre leer atentamente lo que se pide en la consigna. Las consignas s
 5. Hacer un programa que solicite 20 números y luego emitir por pantalla el máximo de los números pares y el mínimo de los números impares.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Clase 6:
+
+Bueno, comenzamos a trabajar con ciclos combinados y aquí les dejo una explicación con diagramas para que vean un poco más al respecto, además con algunos ejemplos adicionales
+
+https://www.youtube.com/watch?v=BX5DYuPfhOo&list=PLQRFzsIQFmxrqL5ViA0k3rsR5H0oNKYxE&index=15
+
+
+Corte de control
+
+Este tema es algo que no vamos a ver en este curso, pero que si tienen ganas y tiempo para ampliar sobre esto, les va a aportar bastante. Corte de control es básicamente una "estrategia" de manejo de datos a partir del uso de ciclos combinados. Les dejo un video en el que lo explico en detalle y, también, con varios ejemplos. Esto es un tema exclusivo que se suele ver en las carreras en la universidad.
+
+https://www.youtube.com/watch?v=VOjsn9liLKo&list=PLQRFzsIQFmxrqL5ViA0k3rsR5H0oNKYxE&index=18
+
+Finalmente, como siempre, una serie de ejercicios resueltos para ir viendo cómo es la cuestión. Pueden verlos, analizarlos, llevarlos al código y chequear su funcionamiento.
+
+https://www.youtube.com/watch?v=HnFENssh9-I&list=PLQRFzsIQFmxrqL5ViA0k3rsR5H0oNKYxE&index=19
+
