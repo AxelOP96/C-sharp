@@ -1,22 +1,31 @@
 # C-sharp
 
 Primera clase:  Software necesario
-En este curso vamos a programar con un lenguaje de programación llamado C# (C sharp). El lenguaje fue desarrollado por Microsoft y tiene una forma de ser escrito bastante parecida a lo que es C++ o Java.
-Para poder programar en C# necesitamos contar con toda la suite de desarrollo de Microsoft que se instala automáticamente al descargar e instalar un IDE que se llama Visual Studio Community. El tema es que este programa es súper pesado y no tiene mucho sentido, por ahora.
-Así que lo que vamos a usar es su hermano menor, que no es menos importante y de hecho es uno de los más famosos hoy en día. Se llama Visual Studio Code. No confundan el nombre, es muy parecido, pero son dos cosas bastante distintas.
+
+
+En este curso vamos a programar con un lenguaje de programación llamado C# (C sharp). El lenguaje fue desarrollado por Microsoft y tiene una forma de ser escrito bastante
+parecida a lo que es C++ o Java.
+Para poder programar en C# necesitamos contar con toda la suite de desarrollo de Microsoft que se instala automáticamente al descargar e instalar un IDE que se llama Visual
+Studio Community. El tema es que este programa es súper pesado y no tiene mucho sentido, por ahora.
+Así que lo que vamos a usar es su hermano menor, que no es menos importante y de hecho es uno de los más famosos hoy en día. Se llama Visual Studio Code. No confundan el nombre,
+es muy parecido, pero son dos cosas bastante distintas.
 El tema es que el Visual Studio Code no te instala todo automáticamente. Pero no pasa nada, es instalar una sola cosa aparte.
 Entonces, lo primero que tenés que hacer es descargar e instalar:
 Visual Studio Code
-Y luego de que lo tengas instalado, vamos a descargar e instalar el Software Development Kit de Microsoft .Net Core. Ufff... cuánto nombre... es básicamente un kit de desarrollo que tiene todo lo que necesitamos, no te asustes.
+Y luego de que lo tengas instalado, vamos a descargar e instalar el Software Development Kit de Microsoft .Net Core. Ufff... cuánto nombre... es básicamente un kit de desarrollo
+que tiene todo lo que necesitamos, no te asustes.
 SDK .Net Core
 Nota: para poder instalar todo esto necesitás contar con Windows. Si no usás Windows, contame que lo podemos adaptar para el sistema que uses. 
 Crear nuevo proyecto
 Lo vamos a ver en la clase, pero si querés ir intentando, te dejo los pasos a seguir para poder crear un nuevo proyecto.
-Lo primero que necesitamos hacer es abrir la terminal, o consola de comandos. En Windows, para ello podés presionar la combinación de teclas Windows + R y en el cuadro de diálogo escribir "cmd" y presionar Enter. Otra forma es buscando la consola en el buscador del menú de Windows.
-Una vez allí lo que tendrás que hacer es posicionarte en una carpeta. O sea entrar a una carpeta en la que vamos a crear el proyecto. Para ello te recomiendo que vayas al escritorio o a Documents y te crees una carpeta que se llame "Práctica Programación" o algo por el estilo. Allí dentro crearás luego todos tus proyectos.
+Lo primero que necesitamos hacer es abrir la terminal, o consola de comandos. En Windows, para ello podés presionar la combinación de teclas Windows + R y en el cuadro de
+diálogo escribir "cmd" y presionar Enter. Otra forma es buscando la consola en el buscador del menú de Windows.
+Una vez allí lo que tendrás que hacer es posicionarte en una carpeta. O sea entrar a una carpeta en la que vamos a crear el proyecto. Para ello te recomiendo que vayas al
+escritorio o a Documents y te crees una carpeta que se llame "Práctica Programación" o algo por el estilo. Allí dentro crearás luego todos tus proyectos.
 Supongamos que en Documents creaste la carpeta "Ejercicios", entonces en la consola deberías escribir:
 cd C:\Users\msarfernandez\Documents\Ejercicios
-O sea, la clave "cd" seguida por un espacio y luego la ruta completa de la carpeta. En el ejemplo es la ruta completa en MI máquina, vos tenés que poner la ruta completa en la tuya. 
+O sea, la clave "cd" seguida por un espacio y luego la ruta completa de la carpeta. En el ejemplo es la ruta completa en MI máquina, vos tenés que poner la ruta completa en la
+tuya. 
 Una vez que logres eso vas a ver algo así:
  
 Eso quiere decir que ya estás dentro de la carpeta.
@@ -42,8 +51,10 @@ Cualquier cosa, me consultás!
 http://youtube.com/watch?v=s6i5I1b4y-I&utm_source=youtube.com&utm_medium=short_domains&utm_campaign=ssyoutube.com&a_ts=1626454393.643
 
 Introducción
-La programación es una disciplina (de tantas hoy en día) que pertenece a la informática, ciencia que se dedica al análisis y transformación de datos e información a partir del uso de computadoras.
-En dicha disciplina se desarrollan algoritmos en un determinado lenguaje de programación, los cuales serán implementados en una computadora para de esa manera realizar los llamados programas.
+La programación es una disciplina (de tantas hoy en día) que pertenece a la informática, ciencia que se dedica al análisis y transformación de datos e información a partir del
+uso de computadoras.
+En dicha disciplina se desarrollan algoritmos en un determinado lenguaje de programación, los cuales serán implementados en una computadora para de esa manera realizar los
+llamados programas.
 Algoritmo
 Un algoritmo es una secuencia finita y ordenada de instrucciones que deben ser seguidas en pos de resolver un problema. 
 
@@ -54,7 +65,9 @@ https://www.youtube.com/watch?v=kJCin3JwIBY
 
 
 Programa
-Un programa es, técnicamente hablando, uno o más (al menos uno) algoritmos de programación escrito en un lenguaje que puede ser interpretado y ejecutado por una computadora. En otras palabras, decimos que un programa es la solución a un problema, ya que cada vez que se requiere desde sumar números hasta realizar traducciones, grandes cálculos o enviar mensajes de texto, se recurre a un programa (o aplicación, o web, lo que corresponda). 
+Un programa es, técnicamente hablando, uno o más (al menos uno) algoritmos de programación escrito en un lenguaje que puede ser interpretado y ejecutado por una computadora. En
+otras palabras, decimos que un programa es la solución a un problema, ya que cada vez que se requiere desde sumar números hasta realizar traducciones, grandes cálculos o enviar
+mensajes de texto, se recurre a un programa (o aplicación, o web, lo que corresponda). 
 
 https://www.youtube.com/watch?v=xmbRFUy8fcc
 
@@ -73,13 +86,20 @@ Ante la ausencia de alguna de éstas partes, no podríamos completar el sistema 
 Software es todo lo que creamos para que una computadora funcione, pero requiere justamente una computadora donde hacerlo, ahí entra el Hardware.
 Hardware es “todo lo que se puede tocar” en una computadora: el monitor, el teclado, incluso todos los componentes internos dentro de la misma. 
 Sin embargo, sin programas para utilizar, todo ese poder de procesamiento, no nos sería de utilidad.
-Humano. Se completa el ciclo con el humano que es quien hace uso de ese Software gracias a ese Hardware, y quizá pueda sonar a una obviedad, pero es clave tener en cuenta este círculo.
-Como ya dijimos, el Software es lo que le da vida a la computadora. Son los programas que nos permiten utilizarlas, y existen distintas categorizaciones dentro del software. Las más comunes son:
--       Software de base: esto corresponde a las cuestiones básicas y de sistema operativo que se requiere para poder encender y usar una computadora (Windows, Linux, Mac OS, Android, iOS).
--       Software utilitarios: son aplicaciones complementarias para el correcto funcionamiento y/o administración de los sistemas. Podemos hablar del desfragmentador de disco, o utilidades de análisis de errores en memoria, entre otros.
+Humano. Se completa el ciclo con el humano que es quien hace uso de ese Software gracias a ese Hardware, y quizá pueda sonar a una obviedad, pero es clave tener en cuenta este
+círculo.
+Como ya dijimos, el Software es lo que le da vida a la computadora. Son los programas que nos permiten utilizarlas, y existen distintas categorizaciones dentro del software. 
+Las más comunes son:
+-       Software de base: esto corresponde a las cuestiones básicas y de sistema operativo que se requiere para poder encender y usar una computadora (Windows, Linux, Mac OS,
+-        Android, iOS).
+-       Software utilitarios: son aplicaciones complementarias para el correcto funcionamiento y/o administración de los sistemas. Podemos hablar del desfragmentador de disco, 
+o utilidades de análisis de errores en memoria, entre otros.
 -       Software de aplicación: los programas, sistemas o aplicaciones que utilizamos a diario.
-Existen más categorías y sub-categorías y además ciertas características adicionales como si son libres, o no, o si son open source, o multiplataforma, pero eso es para indagar en otro contexto.
-También podemos mencionar los “programas para programar”. Desde ya que hoy en día para poder desarrollar programas, vamos a necesitar una computadora, pero además vamos a necesitar uno o más (según corresponda) programas que nos sirvan para ello. Hay aplicaciones específicamente preparadas para, justamente, desarrollar otras aplicaciones, en definitiva, para programar. Estas aplicaciones se suelen conocer como IDE, de sus siglas en inglés "Entorno de Desarrollo Integrado".
+Existen más categorías y sub-categorías y además ciertas características adicionales como si son libres, o no, o si son open source, o multiplataforma, pero eso es para indagar
+en otro contexto.
+También podemos mencionar los “programas para programar”. Desde ya que hoy en día para poder desarrollar programas, vamos a necesitar una computadora, pero además vamos a
+necesitar uno o más (según corresponda) programas que nos sirvan para ello. Hay aplicaciones específicamente preparadas para, justamente, desarrollar otras aplicaciones, en
+definitiva, para programar. Estas aplicaciones se suelen conocer como IDE, de sus siglas en inglés "Entorno de Desarrollo Integrado".
 Dependiendo de lo que quisiéramos programar, será la aplicación que deberíamos utilizar, y esto aplica del mismo modo para la tecnología o lenguaje de programación a utilizar.
 
 
@@ -109,34 +129,56 @@ https://www.youtube.com/watch?v=8ANRCYtveMI
 https://www.youtube.com/watch?v=Bm3X8eHVv-s
 
 
-Esta unidad es más teórica introductoria que para ejercitar. Por eso el siguiente ejercicio va a ser más que nada para que testeemos que el entorno quedó configurado correctamente y que estamos en condiciones para comenzar a programar.
+Esta unidad es más teórica introductoria que para ejercitar. Por eso el siguiente ejercicio va a ser más que nada para que testeemos que el entorno quedó configurado
+correctamente y que estamos en condiciones para comenzar a programar.
 1. Para este primer ejercicio deberás crear tu primer programa que emita en pantalla "Hola Mundo".
 Adicionalmente, podés hacer las modificaciones correspondientes para que el programa emita "Bienvenido Juanito", donde "Juanito" puede ser tu nombre. 
 En este módulo comenzamos a manejar conceptos más precisos y técnicos, puntuales y necesarios para la confección de nuestros primeros programas.
 En la unidad anterior comprendimos las herramientas a utilizar y llevamos a cabo la creación del primer proyecto para corroborar que todo estaba en orden.
-Lo primero que tenemos que comenzar a comprender en cuanto a los programas es que existe un principio básico de todo algoritmo, de todo programa, de toda aplicación; el cual se basa en el esquema que se muestra a continuación:
+Lo primero que tenemos que comenzar a comprender en cuanto a los programas es que existe un principio básico de todo algoritmo, de todo programa, de toda aplicación; el cual se
+basa en el esquema que se muestra a continuación:
  
-Todo programa, para poder operar, necesita contar con una entrada de datos con los cuales realizará un posterior procesamiento, una transformación de esos datos, a partir de los cuales terminará obteniendo información para finalmente brindar una salida.
-Nuestro ejemplo más sencillo parte de la necesidad de sumar dos números. Para poder sumar dos números, el programa deberá solicitarlos (o recibirlos), es decir, contar con una entrada de datos que serán esos dos números. Luego aplicará un procesamiento, que en este caso será sumar esos dos valores que fueron ingresados; para finalmente obtener el resultado de la suma y mostrarlo en pantalla. Esta última sería la salida de información.
+Todo programa, para poder operar, necesita contar con una entrada de datos con los cuales realizará un posterior procesamiento, una transformación de esos datos, a partir de 
+los cuales terminará obteniendo información para finalmente brindar una salida.
+Nuestro ejemplo más sencillo parte de la necesidad de sumar dos números. Para poder sumar dos números, el programa deberá solicitarlos (o recibirlos), es decir, contar con una
+entrada de datos que serán esos dos números. Luego aplicará un procesamiento, que en este caso será sumar esos dos valores que fueron ingresados; para finalmente obtener el
+resultado de la suma y mostrarlo en pantalla. Esta última sería la salida de información.
 ¿Dato o Información?
 Por qué se hace hincapié en la diferencia de que lo que entra son Datos y lo que sale es Información? Podríamos tomarlos como sinónimos?
 La definición de datos dice que: un dato es un conjunto de símbolos sin significado alguno, mientras que por otro lado, la definición de información afirma que: la información está compuesta por símbolos a los que se le ha atribuido algún significado.
 Yo siempre suelo dar un ejemplo un tanto fantástico, pero simple y que, a mí entender, funciona para comprender la idea.
-Se trata de una persona que, caminando por la calle, se encontró con un pergamino tirado. Cuando lo abre se trata de un documento bastante elegante, con firmas y demás pero con un texto que esta persona no podía comprender. Pensó en hacer un cuadro, ya que era lindo, vistoso; terminó por regalárselo a un amigo hijo de japoneses. Este amigo resulta que manejaba la lengua nativa de Japón por sus padres y al ver el pergamino entendió de qué se trataba y no solo eso, pudo leerlo pues estaba escrito en un lenguaje que manejaba y comprendía. Se trataba de un documento correspondiente a un testamento el cual otorgaba una fortuna a quién lo encuentre y, desde ya, pueda reclamarlo por saber de qué se trataba.
-A qué quiero llegar con todo esto? Para la primera persona ese pergamino no era más que un papel "lindo" que a lo sumo podría utilizar para decorar una sala. Un papel con un conjunto de símbolos sin sentido. Pero por otro lado, para su amigo, quien contaba con los elementos necesarios para comprender ese papel, lo que decía en él, par aplicar un procesamiento (a partir de traducir -aplicar un algoritmo-) el contenido del mismo, pasó a atribuirle un significado valiosísimo, en este caso monetario, transformando esos datos en información, mediante un procesamiento.
+Se trata de una persona que, caminando por la calle, se encontró con un pergamino tirado. Cuando lo abre se trata de un documento bastante elegante, con firmas y demás pero con
+un texto que esta persona no podía comprender. Pensó en hacer un cuadro, ya que era lindo, vistoso; terminó por regalárselo a un amigo hijo de japoneses. Este amigo resulta que
+manejaba la lengua nativa de Japón por sus padres y al ver el pergamino entendió de qué se trataba y no solo eso, pudo leerlo pues estaba escrito en un lenguaje que manejaba y
+comprendía. Se trataba de un documento correspondiente a un testamento el cual otorgaba una fortuna a quién lo encuentre y, desde ya, pueda reclamarlo por saber de qué se
+trataba.
+A qué quiero llegar con todo esto? Para la primera persona ese pergamino no era más que un papel "lindo" que a lo sumo podría utilizar para decorar una sala. Un papel con un
+conjunto de símbolos sin sentido. Pero por otro lado, para su amigo, quien contaba con los elementos necesarios para comprender ese papel, lo que decía en él, par aplicar un
+procesamiento (a partir de traducir -aplicar un algoritmo-) el contenido del mismo, pasó a atribuirle un significado valiosísimo, en este caso monetario, transformando esos
+datos en información, mediante un procesamiento.
 El fin de toda aplicación es siempre obtener información.
 El proceso y las variables
-Para poder realizar las transformaciones de las que hablamos necesitamos construir nuestros algoritmos con las instrucciones necesarias. Desde ya que tendremos, generalmente, para comenzar un ingreso de datos y para terminar una salida de información. Pero en el medio es donde vamos a tener que establecer las instrucciones necesarias para darle forma al proceso pertinente que realice la transformación, o "la magia".
+Para poder realizar las transformaciones de las que hablamos necesitamos construir nuestros algoritmos con las instrucciones necesarias. Desde ya que tendremos, generalmente,
+para comenzar un ingreso de datos y para terminar una salida de información. Pero en el medio es donde vamos a tener que establecer las instrucciones necesarias para darle 
+forma al proceso pertinente que realice la transformación, o "la magia".
 Volviendo a nuestro ejemplo de la suma, el proceso sería justamente sumar, valga la redundancia, pero hay varias cosas que se encuentran implícitas en esa operación.
-Para poder sumar dos valores necesitamos previamente contar con ellos, y para eso no alcanza con pedirlos. Una vez que los pedimos, tenemos que guardarlos. Para poder guardar esos datos vamos a necesitar hacer uso de un elemento fundamental en la programación: la variable. Una variable es un espacio en memoria que permite alojar un valor. Es un medio que utilizaremos en nuestros programas para ir guardando todas las cosas que necesitamos dentro y a lo largo de todo algoritmo.
-Imaginen la memoria RAM (si no conocen la memoria RAM repasen el video de la PC del módulo 1) como una hoja excel, la cual cuenta con columnas representadas por letras y filas representadas por números y en cada intersección encontramos una celda. 
+Para poder sumar dos valores necesitamos previamente contar con ellos, y para eso no alcanza con pedirlos. Una vez que los pedimos, tenemos que guardarlos. Para poder guardar
+esos datos vamos a necesitar hacer uso de un elemento fundamental en la programación: la variable. Una variable es un espacio en memoria que permite alojar un valor. Es un 
+medio que utilizaremos en nuestros programas para ir guardando todas las cosas que necesitamos dentro y a lo largo de todo algoritmo.
+Imaginen la memoria RAM (si no conocen la memoria RAM repasen el video de la PC del módulo 1) como una hoja excel, la cual cuenta con columnas representadas por letras y filas
+representadas por números y en cada intersección encontramos una celda. 
  
-Ok. Si yo digo C5, estoy haciendo referencia a la columna C en la fila 5. Podemos decir que la memoria RAM trabaja parecido a esto. C5 sería la dirección de memoria de esa celda. Sin embargo, al querer usar esas "celdas" (variables) en nuestros programas no vamos a estar todo el tiempo usando direcciones de memoria, para ello, lo que haremos es ponerle nombre a las variables. De ese modo, podremos hacer referencia a esas celdas mediante un nombre significativo y fácil de recordar. Significativo porque deberíamos nombrar nuestras variables teniendo en cuenta qué es lo que contienen dentro. 
-Volviendo una vez más a nuestro ejemplo de la suma, para guardar los dos valores ingresados podemos decir que lo haremos en las variables numero1 y numero2. Los nombres de las variables pueden contener cualquier letra, varias palabras y también números, aunque hay ciertas restricciones: 
+Ok. Si yo digo C5, estoy haciendo referencia a la columna C en la fila 5. Podemos decir que la memoria RAM trabaja parecido a esto. C5 sería la dirección de memoria de esa
+celda. Sin embargo, al querer usar esas "celdas" (variables) en nuestros programas no vamos a estar todo el tiempo usando direcciones de memoria, para ello, lo que haremos es
+ponerle nombre a las variables. De ese modo, podremos hacer referencia a esas celdas mediante un nombre significativo y fácil de recordar. Significativo porque deberíamos
+nombrar nuestras variables teniendo en cuenta qué es lo que contienen dentro. 
+Volviendo una vez más a nuestro ejemplo de la suma, para guardar los dos valores ingresados podemos decir que lo haremos en las variables numero1 y numero2. Los nombres de las
+variables pueden contener cualquier letra, varias palabras y también números, aunque hay ciertas restricciones: 
 •	No se puede comenzar el nombre de una variable con números.
 •	El nombre no puede estar compuesto solo por números.
 •	El nombre no puede contener símbolos especiales (por ejemplo * o +).
-El nombre no puede ser igual a una palabra reservada. Dependiendo del lenguaje de programación que usemos, hay palabras que son específicas para hacer algo puntual, con lo cual no podemos usarlas como nombres de variables. Por ejemplo:
+El nombre no puede ser igual a una palabra reservada. Dependiendo del lenguaje de programación que usemos, hay palabras que son específicas para hacer algo puntual, con lo cual
+no podemos usarlas como nombres de variables. Por ejemplo:
 Console
 Palabra que usamos para invocar a la muestra de un mensaje en pantalla como vimos en el primer proyecto de ejemplo:
 Console.WriteLine("Hola Mundo");
@@ -154,7 +196,10 @@ Son los primeros operadores que comenzaremos a utilizar. Estos son:
 •	- para restar
 •	* para multiplicar
 •	/ para dividir
-Estas son las operaciones básicas que el procesador ya conoce y que tenemos disponibles para utilizar. De allí para arriba, es decir, un cuadrado, un logaritmo, etc., etc., son operaciones que tendremos que construir a mano porque el procesador no las sabe. Es verdad que en la actualidad existen muchas cosas ya hechas las cuales podemos utilizar (se llaman librerías, las veremos más adelante), pero generalmente cuando se está comenzando en la programación, una de las primeras cosas se trata de recrear algunas de esas funcionalidades para entender cómo trabajan.
+Estas son las operaciones básicas que el procesador ya conoce y que tenemos disponibles para utilizar. De allí para arriba, es decir, un cuadrado, un logaritmo, etc., etc., 
+son operaciones que tendremos que construir a mano porque el procesador no las sabe. Es verdad que en la actualidad existen muchas cosas ya hechas las cuales podemos utilizar
+(se llaman librerías, las veremos más adelante), pero generalmente cuando se está comenzando en la programación, una de las primeras cosas se trata de recrear algunas de esas
+funcionalidades para entender cómo trabajan.
 
 
 https://www.youtube.com/watch?v=BbYo0eeBNUw
@@ -163,11 +208,14 @@ https://www.youtube.com/watch?v=BbYo0eeBNUw
 Asignación
 La asignación es una acción mediante la cual se da un valor a una variable. Por ejemplo
 jota = 10;
-Lo que estamos haciendo en esa instrucción es tomar el valor 10 y asignarlo, o sea guardarlo, en la variable llamada jota. Hay varios orígenes de datos para realizar una asignación. La que acabamos de ver directamente asigna un valor. También se puede asignar el resultado de una operación matemática o simplemente asignar lo que se pide que una persona ingrese por teclado:
+Lo que estamos haciendo en esa instrucción es tomar el valor 10 y asignarlo, o sea guardarlo, en la variable llamada jota. Hay varios orígenes de datos para realizar una
+asignación. La que acabamos de ver directamente asigna un valor. También se puede asignar el resultado de una operación matemática o simplemente asignar lo que se pide que una
+persona ingrese por teclado:
 resultado = jota + 7;
 variable = Console.ReadLine();
 El primer programa
-Ya sabemos que tenemos que pedir y guardar, y que tenemos que procesar y mostrar. Y tenemos casi todas las herramientas. Hagamos nuestro primer programa en código y luego terminamos de analizar.
+Ya sabemos que tenemos que pedir y guardar, y que tenemos que procesar y mostrar. Y tenemos casi todas las herramientas. Hagamos nuestro primer programa en código y luego
+terminamos de analizar.
 int numero1;
 int numero2;
 int resultado;
@@ -175,9 +223,12 @@ numero1 = int.Parse(Console.ReadLine());
 numero2 = int.Parse(Console.ReadLine());
 resultado = numero1 + numero2;
 Console.WriteLine(resultado);
-En las primeras tres líneas lo que hacemos es declarar las variables y darles un tipo. Trabajaremos con números enteros (recordemos que los tipos que manejaremos por ahora son int, float, char y bool).
-Luego pedimos datos por teclado con la función ReadLine. La misma devuelve un texto, es por eso que con int.Parse lo que hacemos es transformarlo a número, que es lo que queremos. Tranqui, hay cosas que de a poco vamos a ir terminando de entender.
-Luego de pedir y guardar los datos en nuestras variables, volvemos a usar éstas últimas ahora para leer el contenido que antes guardamos y, haciendo uso del operador aritmético para sumar, realizamos la suma. El resultado lo guardamos con el operador = (que en programación no es igual, sino asignar). 
+En las primeras tres líneas lo que hacemos es declarar las variables y darles un tipo. Trabajaremos con números enteros (recordemos que los tipos que manejaremos por ahora son
+int, float, char y bool).
+Luego pedimos datos por teclado con la función ReadLine. La misma devuelve un texto, es por eso que con int.Parse lo que hacemos es transformarlo a número, que es lo que
+queremos. Tranqui, hay cosas que de a poco vamos a ir terminando de entender.
+Luego de pedir y guardar los datos en nuestras variables, volvemos a usar éstas últimas ahora para leer el contenido que antes guardamos y, haciendo uso del operador aritmético
+para sumar, realizamos la suma. El resultado lo guardamos con el operador = (que en programación no es igual, sino asignar). 
 Finalmente, con WriteLine volvemos a leer, esta vez el valor que quedó guardado en resultado, para mostrarlo en pantalla.
 Y listo, ese es nuestro primer programa. Todos estos pasos que tenemos detallados aquí, los tenés súper explicados en el video "Primer Programa" que te sugiero que veas.
 Luego de todo esto, ya estamos en condiciones para seguir avanzando en la creación de otros programas de este tipo.
@@ -215,13 +266,18 @@ Ejercicios resueltos: guía 1 empeza a programar: https://www.youtube.com/watch?
 Tipo de dato INT:
 
 Integral numeric types (C# reference)
-The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.
+The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral
+numeric types support arithmetic, bitwise logical, comparison, and equality operators.
  
-In all of the table rows except the last two, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. The keyword and .NET type name are interchangeable. For example, the following declarations declare variables of the same type:
+In all of the table rows except the last two, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. The keyword and .NET type name are
+interchangeable. For example, the following declarations declare variables of the same type:
 int a = 123;
 System.Int32 b = 123;
-The nint and nuint types in the last two rows of the table are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword and the .NET type are not interchangeable. The compiler provides operations and conversions for nint and nuint as integer types that it doesn't provide for the pointer types System.IntPtr and System.UIntPtr. For more information, see nint and nuint types.
-The default value of each integral type is zero, 0. Each of the integral types except the native-sized types has MinValue and MaxValue constants that provide the minimum and maximum value of that type.
+The nint and nuint types in the last two rows of the table are native-sized integers. They are represented internally by the indicated .NET types, but in each case the keyword
+and the .NET type are not interchangeable. The compiler provides operations and conversions for nint and nuint as integer types that it doesn't provide for the pointer types
+System.IntPtr and System.UIntPtr. For more information, see nint and nuint types.
+The default value of each integral type is zero, 0. Each of the integral types except the native-sized types has MinValue and MaxValue constants that provide the minimum and
+maximum value of that type.
 Use the System.Numerics.BigInteger structure to represent a signed integer with no upper or lower bounds.
 Integer literals
 Integer literals can be
@@ -236,7 +292,9 @@ The preceding example also shows the use of _ as a digit separator, which is sup
 The type of an integer literal is determined by its suffix as follows:
 •	If the literal has no suffix, its type is the first of the following types in which its value can be represented: int, uint, long, ulong.
  Note
-Literals are interpreted as positive values. For example, the literal 0xFF_FF_FF_FF represents the number 4294967295 of the uint type, though it has the same bit representation as the number -1 of the int type. If you need a value of a certain type, cast a literal to that type. Use the unchecked operator, if a literal value cannot be represented in the target type. For example, unchecked((int)0xFF_FF_FF_FF) produces -1.
+Literals are interpreted as positive values. For example, the literal 0xFF_FF_FF_FF represents the number 4294967295 of the uint type, though it has the same bit representation
+as the number -1 of the int type. If you need a value of a certain type, cast a literal to that type. Use the unchecked operator, if a literal value cannot be represented in the
+target type. For example, unchecked((int)0xFF_FF_FF_FF) produces -1.
 •	If the literal is suffixed by U or u, its type is the first of the following types in which its value can be represented: uint, ulong.
 •	If the literal is suffixed by L or l, its type is the first of the following types in which its value can be represented: long, ulong.
  Note
@@ -251,7 +309,8 @@ You can also use a cast to convert the value represented by an integer literal t
 var signedByte = (sbyte)42;
 var longVariable = (long)42;
 Conversions
-You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit. Otherwise, you need to use a cast expression to perform an explicit conversion. For more information, see Built-in numeric conversions.
+You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit.
+Otherwise, you need to use a cast expression to perform an explicit conversion. For more information, see Built-in numeric conversions.
 C# language specification
 For more information, see the following sections of the C# language specification:
 •	Integral types
@@ -266,15 +325,27 @@ Feedback
 
 Tipo de dato FLOAT:
 Floating-point numeric types (C# reference)
-The floating-point numeric types represent real numbers. All floating-point numeric types are value types. They are also simple types and can be initialized with literals. All floating-point numeric types support arithmetic, comparison, and equality operators.
+The floating-point numeric types represent real numbers. All floating-point numeric types are value types. They are also simple types and can be initialized with literals. All
+floating-point numeric types support arithmetic, comparison, and equality operators.
  
-The default value of each floating-point type is zero, 0. Each of the floating-point types has the MinValue and MaxValue constants that provide the minimum and maximum finite value of that type. The float and double types also provide constants that represent not-a-number and infinity values. For example, the double type provides the following constants: Double.NaN, Double.NegativeInfinity, and Double.PositiveInfinity.
-The decimal type is appropriate when the required degree of precision is determined by the number of digits to the right of the decimal point. Such numbers are commonly used in financial applications, for currency amounts (for example, $1.00), interest rates (for example, 2.625%), and so forth. Even numbers that are precise to only one decimal digit are handled more accurately by the decimal type: 0.1, for example, can be exactly represented by a decimal instance, while there's no double or float instance that exactly represents 0.1. Because of this difference in numeric types, unexpected rounding errors can occur in arithmetic calculations when you use double or float for decimal data. You can use double instead of decimal when optimizing performance is more important than ensuring accuracy. However, any difference in performance would go unnoticed by all but the most calculation-intensive applications. Another possible reason to avoid decimal is to minimize storage requirements. For example, ML.NET uses float because the difference between 4 bytes and 16 bytes adds up for very large data sets. For more information, see System.Decimal.
-You can mix integral types and the float and double types in an expression. In this case, integral types are implicitly converted to one of the floating-point types and, if necessary, the float type is implicitly converted to double. The expression is evaluated as follows:
+The default value of each floating-point type is zero, 0. Each of the floating-point types has the MinValue and MaxValue constants that provide the minimum and maximum finite
+value of that type. The float and double types also provide constants that represent not-a-number and infinity values. For example, the double type provides the following
+constants: Double.NaN, Double.NegativeInfinity, and Double.PositiveInfinity.
+The decimal type is appropriate when the required degree of precision is determined by the number of digits to the right of the decimal point. Such numbers are commonly used in
+financial applications, for currency amounts (for example, $1.00), interest rates (for example, 2.625%), and so forth. Even numbers that are precise to only one decimal digit
+are handled more accurately by the decimal type: 0.1, for example, can be exactly represented by a decimal instance, while there's no double or float instance that exactly
+represents 0.1. Because of this difference in numeric types, unexpected rounding errors can occur in arithmetic calculations when you use double or float for decimal data. You
+can use double instead of decimal when optimizing performance is more important than ensuring accuracy. However, any difference in performance would go unnoticed by all but the
+most calculation-intensive applications. Another possible reason to avoid decimal is to minimize storage requirements. For example, ML.NET uses float because the difference
+between 4 bytes and 16 bytes adds up for very large data sets. For more information, see System.Decimal.
+You can mix integral types and the float and double types in an expression. In this case, integral types are implicitly converted to one of the floating-point types and, if
+necessary, the float type is implicitly converted to double. The expression is evaluated as follows:
 •	If there is double type in the expression, the expression evaluates to double, or to bool in relational and equality comparisons.
 •	If there is no double type in the expression, the expression evaluates to float, or to bool in relational and equality comparisons.
-You can also mix integral types and the decimal type in an expression. In this case, integral types are implicitly converted to the decimal type and the expression evaluates to decimal, or to bool in relational and equality comparisons.
-You cannot mix the decimal type with the float and double types in an expression. In this case, if you want to perform arithmetic, comparison, or equality operations, you must explicitly convert the operands either from or to the decimal type, as the following example shows:
+You can also mix integral types and the decimal type in an expression. In this case, integral types are implicitly converted to the decimal type and the expression evaluates 
+to decimal, or to bool in relational and equality comparisons.
+You cannot mix the decimal type with the float and double types in an expression. In this case, if you want to perform arithmetic, comparison, or equality operations, you must
+explicitly convert the operands either from or to the decimal type, as the following example shows:
 double a = 1.0;
 decimal b = 2.1m;
 Console.WriteLine(a + (double)b);
@@ -306,7 +377,8 @@ Console.WriteLine(f);  // output: 1.3445
 decimal m = 1.5E6m;
 Console.WriteLine(m);  // output: 1500000
 Conversions
-There is only one implicit conversion between floating-point numeric types: from float to double. However, you can convert any floating-point type to any other floating-point type with the explicit cast. For more information, see Built-in numeric conversions.
+There is only one implicit conversion between floating-point numeric types: from float to double. However, you can convert any floating-point type to any other floating-point
+type with the explicit cast. For more information, see Built-in numeric conversions.
 C# language specification
 For more information, see the following sections of the C# language specification:
 •	Floating-point types
@@ -320,7 +392,8 @@ See also
 •	Numerics in .NET
 •	System.Numerics.Complex
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Ejercicios 2
 Leer atentamente y resolver!
 Para cada ejercicio deberás escribir el código correspondiente y probar su funcionamiento.
@@ -398,7 +471,9 @@ namespace sumar
         }
     }
 }
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Clase 3: Condicionales
 Módulo 3 - Lectura
 Condicionales
@@ -441,7 +516,8 @@ Las condiciones están formadas, inicialmente, por tres partes:
 •	Un valor.
 •	Un operador de comparación.
 •	Otro valor a ser comparado.
-En este caso el primer valor corresponde al contenido de la variable "a", mientras que el operador de comparación es ">" (mayor) y finalmente el segundo valor es el literal "10".
+En este caso el primer valor corresponde al contenido de la variable "a", mientras que el operador de comparación es ">" (mayor) y finalmente el segundo valor es el literal
+"10".
 Operadores relacionales
 Los operadores disponibles para construir condiciones lógicas se denominan relacionales, y son los siguientes:
 •	> mayor
@@ -451,7 +527,8 @@ Los operadores disponibles para construir condiciones lógicas se denominan rela
 •	== igual (nótese que no es = a secas, son dos símbolos juntos para la igualdad)
 •	!= distinto
 
-Por ahora, solo podemos poner una condición por If. Es decir, una sola "valor condición valor"; con lo cual, deberías tener solamente dos valores y UN operador relacional, para que se entienda que es correcta la condición.
+Por ahora, solo podemos poner una condición por If. Es decir, una sola "valor condición valor"; con lo cual, deberías tener solamente dos valores y UN operador relacional, 
+para que se entienda que es correcta la condición.
 Ejemplos
 Ejemplos correctos
 •	A > 10
@@ -470,7 +547,8 @@ int edad = 21;
 if(edad > 18){
    Console.WriteLine("Sos mayor");
 }
-En este caso muestra un cartel en pantalla si edad tiene un valor mayor a 18 y en caso contrario, no hace nada. Pero qué pasa si sí quisiéramos hacerlo? En ese caso lo que podemos hacer es escribir el bloque else, que, como te habrás dado cuenta, es opcional, ya que hasta ahora no lo habíamos hecho. 
+En este caso muestra un cartel en pantalla si edad tiene un valor mayor a 18 y en caso contrario, no hace nada. Pero qué pasa si sí quisiéramos hacerlo? En ese caso lo que
+podemos hacer es escribir el bloque else, que, como te habrás dado cuenta, es opcional, ya que hasta ahora no lo habíamos hecho. 
 De este modo, siguiendo el mismo ejemplo, podemos mostrar un cartel que diga que sos menor si el valor no es mayor a 18, o sea, si la condición fue falsa.
 int edad = 17;
 if(edad > 18){
@@ -479,15 +557,19 @@ if(edad > 18){
 else{
    Console.WriteLine("Sos menor");
 }
-En este caso, como ahora a edad le asignamos el valor 17, en vez de ir por el verdadero del If, va a ir por el else, o sea, el falso. Tené en cuenta que le asignamos 17 a la variable. Y qué pasa si le hubiésemos asignado 18? En ese caso qué resultado daría el If, verdadero o falso? Teniendo en cuenta lo que se pregunta específicamente en el If y no lo que sepamos de cuándo sos mayor de edad. Si tenés dudas sobre cuál es la respuesta correcta podés probar el código o consultarlo en el Foro de dudas.
+En este caso, como ahora a edad le asignamos el valor 17, en vez de ir por el verdadero del If, va a ir por el else, o sea, el falso. Tené en cuenta que le asignamos 17 a la
+variable. Y qué pasa si le hubiésemos asignado 18? En ese caso qué resultado daría el If, verdadero o falso? Teniendo en cuenta lo que se pregunta específicamente en el If y 
+no lo que sepamos de cuándo sos mayor de edad. Si tenés dudas sobre cuál es la respuesta correcta podés probar el código o consultarlo en el Foro de dudas.
 
-Bueno, comenzamos con IF. En realidad en este video primero resolvemos algunos ejercicios anteriores, creo que ya te lo había compartido antes. Pero ahora, lo relevante es el comienzo de la explicación del condicional IF y comenzar a trabajar con dicha herramienta.
+Bueno, comenzamos con IF. En realidad en este video primero resolvemos algunos ejercicios anteriores, creo que ya te lo había compartido antes. Pero ahora, lo relevante es el
+comienzo de la explicación del condicional IF y comenzar a trabajar con dicha herramienta.
 
 
 Link de youtube: https://www.youtube.com/watch?v=TTvnrL1KUZM&t=1s
 
 
-Luego de aprender lo básico, obviamente viene la hora de hacer ejercicios para comenzar a entrenar lo recién visto. Así que acá resolvemos algunos ejercicios. Y desde ya, seguimos sumando algún que otro dato de color, como también micro temas y datos relevantes!
+Luego de aprender lo básico, obviamente viene la hora de hacer ejercicios para comenzar a entrenar lo recién visto. Así que acá resolvemos algunos ejercicios. Y desde ya,
+seguimos sumando algún que otro dato de color, como también micro temas y datos relevantes!
 
 
 Link de youtube:https://www.youtube.com/watch?v=6B7oRyWqmxA
@@ -498,7 +580,8 @@ Bueno, ya entramos en condicionales, así que ahora sí, vamos a codificar ejerc
 Lean atentamente y codifiquen las soluciones. Si van apareciendo dudas, me van consultando.
 
 1. Hacer un programa para ingresar un número y luego se emita por pantalla un cartel aclaratorio si “Es mayor a 10” o “No es mayor a 10”.
-2. Hacer un programa para ingresar un número y luego se emita un cartel por pantalla “Positivo” si el número es mayor a cero, “Negativo” si el número es menor a cero o “Cero” si el número es igual a cero.
+2. Hacer un programa para ingresar un número y luego se emita un cartel por pantalla “Positivo” si el número es mayor a cero, “Negativo” si el número es menor a cero o “Cero”
+ si el número es igual a cero.
 3. Una casa de video juegos otorga un descuento dependiendo del importe de la compra realizada según los siguientes valores:
 •	Si el importe es menor a ARS 1000, no hay descuento.
 •	Si el importe es ARS 1000 o más pero menor a ARS 5000, aplica un descuento del 10%.
@@ -595,7 +678,9 @@ int uno, dos, tres, cuatro;
                 Console.WriteLine(cuatro);
             }
             
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Clase 4:
 
 Módulo 4 - Lectura
@@ -603,7 +688,8 @@ En este módulo vamos a ver varias herramientas complementarias a la hora de tra
 
 Ya sabemos cómo trabaja el If y cuál es el modo correcto de construir condiciones lógicas a partir del uso de operadores relacionales. 
 
-Sin embargo, lo que vimos hasta ahora es que cada If puede tener una única condición y que si, por ejemplo, quisiéramos realizar dos preguntas, lo tenemos que hacer en dos Ifs separados.
+Sin embargo, lo que vimos hasta ahora es que cada If puede tener una única condición y que si, por ejemplo, quisiéramos realizar dos preguntas, lo tenemos que hacer en dos Ifs
+separados.
 
 Bueno, hay una herramienta que nos brinda la posibilidad de crear más de una condición en un mismo If, y esa herramienta se llama: operador lógico.
 
@@ -619,13 +705,18 @@ si todas las condiciones dan verdadero, entonces el If dará como resultado verd
 
 si una condición da falso, entonces el If dará como resultado falso.
 
-Esto se debe a que al usar el operador AND para concatenar las condiciones, lo que estamos indicando es que queremos que se consulta si se cumple la condición 1 Y se cumple la condición 2 Y se cumple la condición 3 Y.... etc. Estamos buscando saber si se cumplen todas; con lo cual, si se cumplen todas, dará verdadero PERO, con UNA condición que no se cumpla, entonces todo el If dará como resultado falso.
+Esto se debe a que al usar el operador AND para concatenar las condiciones, lo que estamos indicando es que queremos que se consulta si se cumple la condición 1 Y se cumple la
+condición 2 Y se cumple la condición 3 Y.... etc. Estamos buscando saber si se cumplen todas; con lo cual, si se cumplen todas, dará verdadero PERO, con UNA condición que no se
+cumpla, entonces todo el If dará como resultado falso.
 
 OR
-Con el operador "o" pasa exactamente lo contrario. Lo que se busca es el verdadero si se cumple la condición 1 o se cumple la condición 2 o se cumple la condición 3 o... etc. En el caso del operador OR, el resultado será verdadero cuando cualquiera de las condiciones dentro del If de como resultado verdadero. Ahora, cuándo el If se irá hacia el falso? Cuando todas las condiciones den falso.
+Con el operador "o" pasa exactamente lo contrario. Lo que se busca es el verdadero si se cumple la condición 1 o se cumple la condición 2 o se cumple la condición 3 o... etc.
+En el caso del operador OR, el resultado será verdadero cuando cualquiera de las condiciones dentro del If de como resultado verdadero. Ahora, cuándo el If se irá hacia el
+falso? Cuando todas las condiciones den falso.
 
 NOT
-Existe un tercer operador lógico que es el operador de negación, cuyo símbolo es el "!" (signo de admiración). Este operador sirve para invertir (para negar) el resultado de una condición lógica. De este modo, si la condición diera verdadero, el Not haría que se vaya para el falso.
+Existe un tercer operador lógico que es el operador de negación, cuyo símbolo es el "!" (signo de admiración). Este operador sirve para invertir (para negar) el resultado de
+una condición lógica. De este modo, si la condición diera verdadero, el Not haría que se vaya para el falso.
 
 Por ejemplo:
 
@@ -637,9 +728,11 @@ else{
    Console.WriteLine("ES igual a 10");
 }
 Contadores
-Un contador no es más que una variable que vamos a usar para realizar un conteo de algo. Por ejemplo: cuántas personas son mayores de 18, o cuántas personas se sacaron un 10 en la materia, etc.
+Un contador no es más que una variable que vamos a usar para realizar un conteo de algo. Por ejemplo: cuántas personas son mayores de 18, o cuántas personas se sacaron un 10 
+en la materia, etc.
 
-Todo conteo comienza desde un valor conocido, generalmente desde cero; es por eso que un de las prácticas a tener en cuenta a la hora de contar es inicializar la variable en cero. Inicializar significa dar un valor inicial. De ese modo nos garantizamos que el conteo arranca desde un valor determinado.
+Todo conteo comienza desde un valor conocido, generalmente desde cero; es por eso que un de las prácticas a tener en cuenta a la hora de contar es inicializar la variable 
+en cero. Inicializar significa dar un valor inicial. De ese modo nos garantizamos que el conteo arranca desde un valor determinado.
 
 Contar es agregarle una unidad a una variable. Esto se puede hacer del siguiente modo:
 
@@ -649,9 +742,11 @@ a = a + 1;
 a = a + 1;
 Console.WriteLine(a);
 Console.ReadLine();
-Si se observa, en este caso el valor de "a" comienza en cero y luego se realiza tres veces una suma de una unidad sobre la misma. Esto realiza un efecto de conteo ya que se va sumando de a uno. Al final, al mostrar el contenido de "a", el mismo será 3.
+Si se observa, en este caso el valor de "a" comienza en cero y luego se realiza tres veces una suma de una unidad sobre la misma. Esto realiza un efecto de conteo ya que se 
+va sumando de a uno. Al final, al mostrar el contenido de "a", el mismo será 3.
 
-La idea de estos conteos es realizarlos, como se mencionó antes, de manera condicional, de modo tal que antes de contar se realizaría una comparación para identificar si hay que contar o no.
+La idea de estos conteos es realizarlos, como se mencionó antes, de manera condicional, de modo tal que antes de contar se realizaría una comparación para identificar si hay
+que contar o no.
 
 Por ejemplo: evaluar tres edades y mostrar por pantalla cuántas son mayores a 18.
 
@@ -671,7 +766,8 @@ Console.ReadLine();
 En este caso, el resultado por pantalla sería 2.
 
 Operador de incremento
-Existe un operador que nos permite simplificar el conteo aplicado a una variable. Ese operador se denomina operador de incremento, cuyo símbolo se representa con un doble más: ++
+Existe un operador que nos permite simplificar el conteo aplicado a una variable. Ese operador se denomina operador de incremento, cuyo símbolo se representa con un doble más:
+++
 
 Con este operador, pasamos de tener
 
@@ -679,12 +775,14 @@ con = con + 1
 a tener simplemente 
 
 con++
-El ++ lo que hará es incrementar una unidad a cualquiera sea la variable y contenido que tenga a su izquierda. También existe su contraparte que corresponde a "--" (menos menos) que lo que hace es exactamente lo opuesto: disminuir una unidad de la variable a la que se asigne.
+El ++ lo que hará es incrementar una unidad a cualquiera sea la variable y contenido que tenga a su izquierda. También existe su contraparte que corresponde a "--" (menos
+menos) que lo que hace es exactamente lo opuesto: disminuir una unidad de la variable a la que se asigne.
 
 Nótese que en este caso no aplica el uso de la asignación (operador =), ya que la misma se desarrolla de manera implícita.
 
 Acumuladores
-Un acumulador funciona de manera similar a un contador. La diferencia es que en este caso no se suma de a una unidad sino que se suman distintos valores y lo que escriba, se irá agregando a lo ya existente. Por ejemplo:
+Un acumulador funciona de manera similar a un contador. La diferencia es que en este caso no se suma de a una unidad sino que se suman distintos valores y lo que escriba, se
+irá agregando a lo ya existente. Por ejemplo:
 
 int a = 0;
 a = a + 10;
@@ -694,7 +792,8 @@ Console.WriteLine(a);
 Console.ReadLine();
 En este caso el resultado en pantalla será 18, la suma de todos los valores.
 
-De la misma manera que el conteo, los acumuladores se suelen usar condicionalmente; y también contamos con un operador especial para resumir la instrucción. El operador de acumulación: +=.
+De la misma manera que el conteo, los acumuladores se suelen usar condicionalmente; y también contamos con un operador especial para resumir la instrucción. El operador de
+acumulación: +=.
 
 De este modo, pasamos de tener:
 
@@ -705,11 +804,15 @@ a+=10;
 Son instrucciones que hace exactamente lo mismo, pero de una manera más compacta de escribir. También existe el operador para disminuir, y el mismo es el "-=".
 
 El Switch
-El switch es una herramienta de decisión que nos permite evaluar el contenido de una variable u operación y, a diferencia del If que nos permite solo una de dos opciones posibles (verdadero o falso), nos permite setear múltiples opciones posibles para el valor que se esté evaluando. Desde ya que una vez decidido el valor, se ejecutará un solo camino como también sucede con el If.
+El switch es una herramienta de decisión que nos permite evaluar el contenido de una variable u operación y, a diferencia del If que nos permite solo una de dos opciones
+posibles (verdadero o falso), nos permite setear múltiples opciones posibles para el valor que se esté evaluando. Desde ya que una vez decidido el valor, se ejecutará un solo
+camino como también sucede con el If.
 
-La diferencia principal, además de la cantidad de opciones, es que e switch no hace uso de los operadores relacionales. Simplemente se evalúa un valor y se elige un camino posible dependiendo de lo que se haya evaluado.
+La diferencia principal, además de la cantidad de opciones, es que e switch no hace uso de los operadores relacionales. Simplemente se evalúa un valor y se elige un camino
+posible dependiendo de lo que se haya evaluado.
 
-Por ejemplo: haremos un switch que reciba una variable y si la misma contiene un 1, mostrar Hola en pantalla, si tiene 2, mostrar Chau, si tiene 3 mostrar Blanco y si tiene 4 mostrar Negro.
+Por ejemplo: haremos un switch que reciba una variable y si la misma contiene un 1, mostrar Hola en pantalla, si tiene 2, mostrar Chau, si tiene 3 mostrar Blanco y si tiene 4
+mostrar Negro.
 
 int a = 3;
 Switch(a){
@@ -730,7 +833,10 @@ Console.WriteLine("Opción incorrecta");
 break;
 }
 Console.ReadLine();
-Este programa muestra por pantalla "Blanco", como pueden ver (también pueden copiar y probar el código en ejecución). Pueden ver dos particularidades: por un lado, contamos dentro de cada "case" el valor posible. En este caso cada "case" es cada brazo del Switch. Pero además, cada case al final cuenta con un break, que determina el final del mismo. Por otro lado, contamos con un último "case" denominado "default", que es por donde pasará la ejecución si el valor contenido en la variable que está siendo analizada no se corresponde con ninguna de las opciones seteadas.
+Este programa muestra por pantalla "Blanco", como pueden ver (también pueden copiar y probar el código en ejecución). Pueden ver dos particularidades: por un lado, contamos
+dentro de cada "case" el valor posible. En este caso cada "case" es cada brazo del Switch. Pero además, cada case al final cuenta con un break, que determina el final del
+mismo. Por otro lado, contamos con un último "case" denominado "default", que es por donde pasará la ejecución si el valor contenido en la variable que está siendo analizada 
+no se corresponde con ninguna de las opciones seteadas.
 
 
 Videos 4
@@ -773,13 +879,16 @@ i5 (1)	i7 (2)	i9 (3)
 8 RAM (1)	USD 800	USD 900	USD 1200
 16 RAM (2)	USD 900	USD 1000	USD 1400
 32 RAM (3)	USD 1000	USD 1400	USD 2000
-Además, el equipo viene con un disco que permite almacenar 500 GB de información y que se puede ampliar a 1 TB si así lo desea, lo cual tiene un costo  adicional de USD 300. Hacer un programa que solicite la opción de procesador, la opción de memoria  RAM, y si extiende el disco o no (ingresa 1 para extender y 0 para no extender) y calcule y emita por pantalla el monto de la máquina seleccionada.
+Además, el equipo viene con un disco que permite almacenar 500 GB de información y que se puede ampliar a 1 TB si así lo desea, lo cual tiene un costo  adicional de USD 300.
+Hacer un programa que solicite la opción de procesador, la opción de memoria  RAM, y si extiende el disco o no (ingresa 1 para extender y 0 para no extender) y calcule y emita
+por pantalla el monto de la máquina seleccionada.
 
 4. Hacer un programa para ingresar tres números y emitir un cartel aclaratorio si la suma de los dos primeros es mayor al producto del segundo con el tercero.
 
 5. Hacer un programa para ingresar 4 números. Luego analizar e informar por pantalla si los mismos se encuentran ordenados de forma decreciente .
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Clase 5:
 
 Módulo 5 - Lectura
@@ -796,36 +905,52 @@ Console.WriteLine("Hola mundo");
 Console.WriteLine("Hola mundo");
 
 
-Es decir, escribir cinco veces la misma línea de código. Con un ciclo (también conocidos como bucles) puedo programar escribir esa instrucción una sola vez pero que se ejecute cinco veces. O las veces que necesite. 
+Es decir, escribir cinco veces la misma línea de código. Con un ciclo (también conocidos como bucles) puedo programar escribir esa instrucción una sola vez pero que se ejecute
+cinco veces. O las veces que necesite. 
 
 
 Ciclo For
 Hay distintos tipos de ciclos, vamos a comenzar con el ciclo exacto: el ciclo FOR.
 
-El FOR es un ciclo que nos permite ejecutar un conjunto de instrucciones una cantidad de veces establecida. Por ejemplo cinco. Por ejemplo diez. De allí su calificación de "ciclo exacto", porque dará exactamente la cantidad de vueltas que esté configurado para dar.
+El FOR es un ciclo que nos permite ejecutar un conjunto de instrucciones una cantidad de veces establecida. Por ejemplo cinco. Por ejemplo diez. De allí su calificación de
+"ciclo exacto", porque dará exactamente la cantidad de vueltas que esté configurado para dar.
 
-Para configurar un ciclo FOR vamos a necesitar contar con una variable, generalmente se usa como nombre para dicha variable las letras "x", "y" o "z" aunque también encontrarán muy frecuentemente que la variable del FOR se denomina "i" (de "iterar", que significa ciclar, o dar una vuelta al ciclo).
+Para configurar un ciclo FOR vamos a necesitar contar con una variable, generalmente se usa como nombre para dicha variable las letras "x", "y" o "z" aunque también encontrarán
+muy frecuentemente que la variable del FOR se denomina "i" (de "iterar", que significa ciclar, o dar una vuelta al ciclo).
 
 Una vez con la variable hay tres factores que se requiere configurar en un ciclo:
 
 Inicialización.
 Condición.
 Incremento.
-Cada una de estas acciones ya son conocidas por separado, pero en este caso van a estar trabajando en conjunto para poder configurar lo que se denomina "reloj" del ciclo y que será lo que permita el funcionamiento del mecanismo del mismo.
+Cada una de estas acciones ya son conocidas por separado, pero en este caso van a estar trabajando en conjunto para poder configurar lo que se denomina "reloj" del ciclo y que
+será lo que permita el funcionamiento del mecanismo del mismo.
 
 Inicialización
-Se trata de dar un valor inicial a la variable del ciclo. Esta instrucción se ejecutará una sola vez en toda la vida del ciclo y es para darle un punto de partida al mismo. Se puede inicializar en cualquier valor, incluso en el valor de otra variable, aunque en una configuración regular, se suele incializar simplemente en cero.
+Se trata de dar un valor inicial a la variable del ciclo. Esta instrucción se ejecutará una sola vez en toda la vida del ciclo y es para darle un punto de partida al mismo. Se
+puede inicializar en cualquier valor, incluso en el valor de otra variable, aunque en una configuración regular, se suele incializar simplemente en cero.
 
 Condición
-La condición es la instrucción que determinará si se sigue iterando o no. Se ejecuta previo a comenzar cada vuelta del ciclo y si da verdadero, se ejecuta la vuelta. Cuando sea falso, se dará por terminado el ciclo. Aquí se puede asignar cualquier condición válida para un IF, ya que manejan exactamente el mismo formato, incluso se pueden agregar operadores lógicos. En una configuración regular se suele hacer una comparación del tipo "menor a" el valor cuya cantidad de vueltas se quiere dar. Por ejemplo "x < 5" si quiero dar cinco vueltas.
+La condición es la instrucción que determinará si se sigue iterando o no. Se ejecuta previo a comenzar cada vuelta del ciclo y si da verdadero, se ejecuta la vuelta. Cuando sea
+falso, se dará por terminado el ciclo. Aquí se puede asignar cualquier condición válida para un IF, ya que manejan exactamente el mismo formato, incluso se pueden agregar
+operadores lógicos. En una configuración regular se suele hacer una comparación del tipo "menor a" el valor cuya cantidad de vueltas se quiere dar. Por ejemplo "x < 5" si
+quiero dar cinco vueltas.
 
 Incremento
-El incremento es la instrucción que se encargará de modificar el valor de la variable del ciclo para que, eventualmente, la condición dé falso y el ciclo pueda concluir. De otro modo, la condición dará siempre verdadero y el ciclo no terminaría, lo que sería un problema (se conoce como ciclo que tiende a infinito). Generalmente se utiliza un incremento de a una unidad (x++) aunque también puede variar.
+El incremento es la instrucción que se encargará de modificar el valor de la variable del ciclo para que, eventualmente, la condición dé falso y el ciclo pueda concluir. De
+otro modo, la condición dará siempre verdadero y el ciclo no terminaría, lo que sería un problema (se conoce como ciclo que tiende a infinito). Generalmente se utiliza un
+incremento de a una unidad (x++) aunque también puede variar.
 
 Funcionamiento
-Cuando la ejecución de un programa se encuentra con un ciclo, lo primero que hace es reconocer cuál es la variable del mismo. Lo siguiente, y por única vez, es ejecutar la inicialización. Luego de eso ejecuta la condición y si la misma da verdadero, ingresa al ciclo y ejecuta todo lo que haya dentro. Dentro del ciclo pueden haber tantas instrucciones como necesitemos, incluso otros ciclos, pero esto lo veremos más adelante. Luego de haber ejecutado todas las instrucciones dentro del ciclo y haber llegado al final del mismo, el próximo paso es el incremento. Una vez realizado, se vuelve a evaluar la condición, y si sigue dando verdadero, sigue entrando al ciclo. Así hasta que la condición por fin dé falso.
+Cuando la ejecución de un programa se encuentra con un ciclo, lo primero que hace es reconocer cuál es la variable del mismo. Lo siguiente, y por única vez, es ejecutar la
+inicialización. Luego de eso ejecuta la condición y si la misma da verdadero, ingresa al ciclo y ejecuta todo lo que haya dentro. Dentro del ciclo pueden haber tantas
+instrucciones como necesitemos, incluso otros ciclos, pero esto lo veremos más adelante. Luego de haber ejecutado todas las instrucciones dentro del ciclo y haber llegado al
+final del mismo, el próximo paso es el incremento. Una vez realizado, se vuelve a evaluar la condición, y si sigue dando verdadero, sigue entrando al ciclo. Así hasta que la
+condición por fin dé falso.
 
-Como se ha dicho antes, cada una de las configuraciones cuenta con lo que llamaremos "configuración estándar", sin embargo se puede establecer valores de cualquier tipo en cada una de ellas siempre y cuando se cumpla con la estructura respectiva. Hay que tener en cuenta que la cantidad de vueltas que dará el ciclo depende directamente de la configuración de su reloj, con lo cual tenemos que tener muy claro qué es lo que estamos configurando y por qué.
+Como se ha dicho antes, cada una de las configuraciones cuenta con lo que llamaremos "configuración estándar", sin embargo se puede establecer valores de cualquier tipo en cada
+una de ellas siempre y cuando se cumpla con la estructura respectiva. Hay que tener en cuenta que la cantidad de vueltas que dará el ciclo depende directamente de la
+configuración de su reloj, con lo cual tenemos que tener muy claro qué es lo que estamos configurando y por qué.
 
 Configuración estándar
 Si queremos que un ciclo de diez vueltas, la configuración más sencilla sería:
@@ -833,7 +958,8 @@ Si queremos que un ciclo de diez vueltas, la configuración más sencilla sería
 x = 0
 x < 10
 x++
-Donde "x" arranca en cero, y en cada vuelta se preguntará si "x" es menor a diez. Mientras sea, se ingresa y se da una vuelta. Al final de cada vuelta se incrementará el valor de "x" en uno.
+Donde "x" arranca en cero, y en cada vuelta se preguntará si "x" es menor a diez. Mientras sea, se ingresa y se da una vuelta. Al final de cada vuelta se incrementará el valor
+de "x" en uno.
 
 Ejemplo en código
 Hagamos en código el ejemplo de mostrar cinco veces el hola mundo pero escribiendo una sola vez dicha instrucción:
@@ -847,7 +973,10 @@ Link de youtube: https://www.youtube.com/watch?v=v3rHho4ticQ
 
 
 Ciclo While
-Ya conocemos el Ciclo FOR. El mismo nos permite, a partir de una configuración previamente establecida, repetir un conjunto de instrucciones siempre y cuando conozcamos la cantidad de veces que necesitamos que el mismo se ejecute. Hay ocasiones en las que no se conocerá la cantidad de veces que un algoritmo deberá ser ejecutado; en dichos casos se utiliza otro tipo de ciclo, denominado ciclo inexacto, que repetirá el conjunto de instrucciones dado dependiendo de una condición establecida. Existen básicamente dos tipos de ciclos inexactos en la programación. Por un lado el While y por otro lado en Do While.
+Ya conocemos el Ciclo FOR. El mismo nos permite, a partir de una configuración previamente establecida, repetir un conjunto de instrucciones siempre y cuando conozcamos la
+cantidad de veces que necesitamos que el mismo se ejecute. Hay ocasiones en las que no se conocerá la cantidad de veces que un algoritmo deberá ser ejecutado; en dichos casos
+se utiliza otro tipo de ciclo, denominado ciclo inexacto, que repetirá el conjunto de instrucciones dado dependiendo de una condición establecida. Existen básicamente dos tipos
+de ciclos inexactos en la programación. Por un lado el While y por otro lado en Do While.
 
 El ciclo While (del inglés “mientras”) comenzará a ciclar siempre y cuando la condición dada sea verdadera, y seguirá ciclando hasta tanto esa situación no cambie.
 
@@ -856,11 +985,15 @@ while(n<10){
    n++;
    Console.WriteLine(n);
 }
-En el ejemplo se declara una variable inicializada en cero. Cuando el flujo se encuentra con el ciclo While, lo primero que se hace es evaluar la condición: “El contenido de la variable, es menor a diez?”. Naturalmente en este momento la condición tiene como resultado un valor “TRUE”. Recordemos que una condición de este tipo puede adoptar sólo uno de dos valores (true o false. 1 o 0, etc.). Una vez dentro del ciclo, se ejecutan las instrucciones. Se incrementa el valor de la variable y se muestra en pantalla. Una vez concluías estas dos instrucciones, se evaluará la condición nuevamente. El ciclo del ejemplo dejará de girar cuando la variable “N” sea igual a 10 (diez).
+En el ejemplo se declara una variable inicializada en cero. Cuando el flujo se encuentra con el ciclo While, lo primero que se hace es evaluar la condición: “El contenido de la
+variable, es menor a diez?”. Naturalmente en este momento la condición tiene como resultado un valor “TRUE”. Recordemos que una condición de este tipo puede adoptar sólo uno de
+dos valores (true o false. 1 o 0, etc.). Una vez dentro del ciclo, se ejecutan las instrucciones. Se incrementa el valor de la variable y se muestra en pantalla. Una vez
+concluías estas dos instrucciones, se evaluará la condición nuevamente. El ciclo del ejemplo dejará de girar cuando la variable “N” sea igual a 10 (diez).
 
 Ciclo Do While
 
-Este ciclo funciona casi de la misma manera que el ciclo While tradicional. La diferencia fundamental es que la primer vuelta se ejecutará siempre, y recién para la segunda es que la condición será evaluada para determinar si continuar ciclando o concluir el bloque. Un ejemplo codificado sería:
+Este ciclo funciona casi de la misma manera que el ciclo While tradicional. La diferencia fundamental es que la primer vuelta se ejecutará siempre, y recién para la segunda es
+que la condición será evaluada para determinar si continuar ciclando o concluir el bloque. Un ejemplo codificado sería:
 
 int N = 0;
 do{
@@ -896,7 +1029,8 @@ Link de youtube: https://www.youtube.com/watch?v=BX5DYuPfhOo
 Ejercicios 5
 Comencemos a practicar con ciclos entonces!
 
-Recordá siempre leer atentamente lo que se pide en la consigna. Las consignas son cada vez más complejas, con lo cual seguramente vayan necesitando más lectura. Es decir, no alcanza con leer la consigna una sola vez para terminar de entender lo que pide. Puede que tengas que leerlas 5, 10, 15 veces o más. No te preocupes, hay que hacerlo!
+Recordá siempre leer atentamente lo que se pide en la consigna. Las consignas son cada vez más complejas, con lo cual seguramente vayan necesitando más lectura. Es decir, no
+alcanza con leer la consigna una sola vez para terminar de entender lo que pide. Puede que tengas que leerlas 5, 10, 15 veces o más. No te preocupes, hay que hacerlo!
 
 
 
@@ -906,10 +1040,13 @@ Recordá siempre leer atentamente lo que se pide en la consigna. Las consignas s
 
 3. Hacer un programa que solicite 20 edades y luego calcule el promedio de edad de aquellas personas mayores a 18 años.
 
-4. Hacer un programa que solicite UN número y luego calcule y emita un cartel aclaratorio si el mismo es primo o no es primo.  Nota: un numero es primo cuando es divisible únicamente por 1 y por sí mismo.
+4. Hacer un programa que solicite UN número y luego calcule y emita un cartel aclaratorio si el mismo es primo o no es primo.  Nota: un numero es primo cuando es divisible
+ únicamente por 1 y por sí mismo.
 
 5. Hacer un programa que solicite 20 números y luego emitir por pantalla el máximo de los números pares y el mínimo de los números impares.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Clase 6:
 
 Bueno, comenzamos a trabajar con ciclos combinados y aquí les dejo una explicación con diagramas para que vean un poco más al respecto, además con algunos ejemplos adicionales
@@ -919,7 +1056,9 @@ https://www.youtube.com/watch?v=BX5DYuPfhOo&list=PLQRFzsIQFmxrqL5ViA0k3rsR5H0oNK
 
 Corte de control
 
-Este tema es algo que no vamos a ver en este curso, pero que si tienen ganas y tiempo para ampliar sobre esto, les va a aportar bastante. Corte de control es básicamente una "estrategia" de manejo de datos a partir del uso de ciclos combinados. Les dejo un video en el que lo explico en detalle y, también, con varios ejemplos. Esto es un tema exclusivo que se suele ver en las carreras en la universidad.
+Este tema es algo que no vamos a ver en este curso, pero que si tienen ganas y tiempo para ampliar sobre esto, les va a aportar bastante. Corte de control es básicamente una
+"estrategia" de manejo de datos a partir del uso de ciclos combinados. Les dejo un video en el que lo explico en detalle y, también, con varios ejemplos. Esto es un tema
+exclusivo que se suele ver en las carreras en la universidad.
 
 https://www.youtube.com/watch?v=VOjsn9liLKo&list=PLQRFzsIQFmxrqL5ViA0k3rsR5H0oNKYxE&index=18
 
