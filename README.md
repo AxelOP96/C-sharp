@@ -1005,6 +1005,10 @@ Link de youtube: https://www.youtube.com/watch?v=HSUKndu5XAg
 
 
 Videos
+Muchachada, en este video aprendemos qué es el ciclo FOR, cómo funciona, para qué sirve y varios ejemplos de su funcionamiento!
+Mirenlo, lean el apunte de la unidad, y arranquen a hacer los ejercicios de la guía 3
+
+
 Arrancamos con ciclos! En el siguiente video vemos en qué consiste el ciclo FOR y cómo funciona paso a paso y súper detallado.
 
 
@@ -1025,6 +1029,29 @@ Link de youtube: https://www.youtube.com/watch?v=HSUKndu5XAg
 
 Link de youtube: https://www.youtube.com/watch?v=BX5DYuPfhOo
 
+Módulo 5 - Videos While
+Gente, aquí va la explicación en video del ciclo inexacto While. 
+
+https://www.youtube.com/watch?v=HSUKndu5XAg
+
+Bueno, ejercicios resueltos de While. En este caso en un único video, pero punteado ejercicio por ejercicio. Muy importante para ver cómo se abordan, qué particularidades tener en cuenta y demás. A revisar!
+
+Lista de ejercicios del video:
+
+00:00 👉Inicio
+03:00 👉 Ejercicio 1. Números 1 al 10.
+06:22 👉 Ejercicio 2. Números 10 a 1.
+07:33 👉 Ejercicio 3. Contador.
+09:57 👉 Ejercicio 4. Números entre el menor y el mayor.
+12:58 👉 Ejercicio 5. 1 a 100 de 5 en 5.
+13:59 👉 Ejercicio 6. Primo con While.
+16:01 👉 Ejercicio 7. Máximo y Posición. Cantidad de oros variable.
+21:50 👉 Ejercicio 8. Menor y segundo menor.
+31:43   👉 Ejercicio 9. Menor, segundo menor y sus posiciones.
+38:51 👉 Ejercicio 10. Máximo negativo, mínimo positivo. BANDERA.
+45:08 👉 Ejercicio 11. Contador. Ciclo dentro de ciclo.
+
+https://www.youtube.com/watch?v=BX5DYuPfhOo
 
 Ejercicios 5
 Comencemos a practicar con ciclos entonces!
