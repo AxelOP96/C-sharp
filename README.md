@@ -1066,3 +1066,631 @@ Finalmente, como siempre, una serie de ejercicios resueltos para ir viendo cómo
 
 https://www.youtube.com/watch?v=HnFENssh9-I&list=PLQRFzsIQFmxrqL5ViA0k3rsR5H0oNKYxE&index=19
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clase 7:
+
+Vectores
+Comenzamos con Vectores. Un tipo de variable especial, dimensional, que nos permite guardar muchos valores bajo un mismo pseudónimo de variable...
+
+
+Array Class
+Definition
+Namespace:
+System
+Assembly:
+System.Runtime.dll
+Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the base class for all arrays in the common language runtime.
+
+C#
+
+Copy
+public abstract class Array : ICloneable, System.Collections.IList, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable
+Inheritance
+Object
+Array
+Implements
+ICollection  IEnumerable  IList  IStructuralComparable  IStructuralEquatable  ICloneable
+Examples
+The following code example shows how Array.Copy copies elements between an array of type integer and an array of type Object.
+
+C#
+
+Copy
+
+Run
+using System;
+public class SamplesArray
+{
+
+    public static void Main()
+    {
+
+        // Creates and initializes a new integer array and a new Object array.
+        int[] myIntArray = new int[5] { 1, 2, 3, 4, 5 };
+        Object[] myObjArray = new Object[5] { 26, 27, 28, 29, 30 };
+
+        // Prints the initial values of both arrays.
+        Console.WriteLine("Initially,");
+        Console.Write("integer array:");
+        PrintValues(myIntArray);
+        Console.Write("Object array: ");
+        PrintValues(myObjArray);
+
+        // Copies the first two elements from the integer array to the Object array.
+        System.Array.Copy(myIntArray, myObjArray, 2);
+
+        // Prints the values of the modified arrays.
+        Console.WriteLine("\nAfter copying the first two elements of the integer array to the Object array,");
+        Console.Write("integer array:");
+        PrintValues(myIntArray);
+        Console.Write("Object array: ");
+        PrintValues(myObjArray);
+
+        // Copies the last two elements from the Object array to the integer array.
+        System.Array.Copy(myObjArray, myObjArray.GetUpperBound(0) - 1, myIntArray, myIntArray.GetUpperBound(0) - 1, 2);
+
+        // Prints the values of the modified arrays.
+        Console.WriteLine("\nAfter copying the last two elements of the Object array to the integer array,");
+        Console.Write("integer array:");
+        PrintValues(myIntArray);
+        Console.Write("Object array: ");
+        PrintValues(myObjArray);
+    }
+
+    public static void PrintValues(Object[] myArr)
+    {
+        foreach (Object i in myArr)
+        {
+            Console.Write("\t{0}", i);
+        }
+        Console.WriteLine();
+    }
+
+    public static void PrintValues(int[] myArr)
+    {
+        foreach (int i in myArr)
+        {
+            Console.Write("\t{0}", i);
+        }
+        Console.WriteLine();
+    }
+}
+/*
+This code produces the following output.
+
+Initially,
+integer array:  1       2       3       4       5
+Object array:   26      27      28      29      30
+
+After copying the first two elements of the integer array to the Object array,
+integer array:  1       2       3       4       5
+Object array:   1       2       28      29      30
+
+After copying the last two elements of the Object array to the integer array,
+integer array:  1       2       3       29      30
+Object array:   1       2       28      29      30
+*/
+The following code example creates and initializes an Array and displays its properties and its elements.
+
+C#
+
+Copy
+
+Run
+// Creates and initializes a new three-dimensional Array of type int.
+Array myArr = Array.CreateInstance(typeof(int), 2, 3, 4);
+for (int i = myArr.GetLowerBound(0); i <= myArr.GetUpperBound(0); i++)
+{
+    for (int j = myArr.GetLowerBound(1); j <= myArr.GetUpperBound(1); j++)
+    {
+        for (int k = myArr.GetLowerBound(2); k <= myArr.GetUpperBound(2); k++)
+        {
+            myArr.SetValue((i * 100) + (j * 10) + k, i, j, k);
+        }
+    }
+}
+
+// Displays the properties of the Array.
+Console.WriteLine("The Array has {0} dimension(s) and a total of {1} elements.", myArr.Rank, myArr.Length);
+Console.WriteLine("\tLength\tLower\tUpper");
+for (int i = 0; i < myArr.Rank; i++)
+{
+    Console.Write("{0}:\t{1}", i, myArr.GetLength(i));
+    Console.WriteLine("\t{0}\t{1}", myArr.GetLowerBound(i), myArr.GetUpperBound(i));
+}
+
+// Displays the contents of the Array.
+Console.WriteLine("The Array contains the following values:");
+PrintValues(myArr);
+
+void PrintValues(Array myArray)
+{
+    System.Collections.IEnumerator myEnumerator = myArray.GetEnumerator();
+    int i = 0;
+    int cols = myArray.GetLength(myArray.Rank - 1);
+    while (myEnumerator.MoveNext())
+    {
+        if (i < cols)
+        {
+            i++;
+        }
+        else
+        {
+            Console.WriteLine();
+            i = 1;
+        }
+        Console.Write("\t{0}", myEnumerator.Current);
+    }
+    Console.WriteLine();
+}
+// This code produces the following output.
+
+// The Array has 3 dimension(s) and a total of 24 elements.
+//     Length    Lower    Upper
+// 0:  2    0    1
+// 1:  3    0    2
+// 2:  4    0    3
+//
+// The Array contains the following values:
+//    0      1      2      3
+//    10     11     12     13
+//    20     21     22     23
+//    100    101    102    103
+//    110    111    112    113
+//    120    121    122    123
+Remarks
+The Array class is not part of the System.Collections namespaces. However, it is still considered a collection because it is based on the IList interface.
+
+The Array class is the base class for language implementations that support arrays. However, only the system and compilers can derive explicitly from the Array class. Users should employ the array constructs provided by the language.
+
+An element is a value in an Array. The length of an Array is the total number of elements it can contain. The lower bound of an Array is the index of its first element. An Array can have any lower bound, but it has a lower bound of zero by default. A different lower bound can be defined when creating an instance of the Array class using CreateInstance. A multidimensional Array can have different bounds for each dimension. An array can have a maximum of 32 dimensions.
+
+Unlike the classes in the System.Collections namespaces, Array has a fixed capacity. To increase the capacity, you must create a new Array object with the required capacity, copy the elements from the old Array object to the new one, and delete the old Array.
+
+The array size is limited to a total of 4 billion elements, and to a maximum index of 0X7FEFFFFF in any given dimension (0X7FFFFFC7 for byte arrays and arrays of single-byte structures).
+
+.NET Framework only: By default, the maximum size of an Array is 2 gigabytes (GB). In a 64-bit environment, you can avoid the size restriction by setting the enabled attribute of the gcAllowVeryLargeObjects configuration element to true in the run-time environment.
+
+Single-dimensional arrays implement the System.Collections.Generic.IList<T>, System.Collections.Generic.ICollection<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IReadOnlyList<T> and System.Collections.Generic.IReadOnlyCollection<T> generic interfaces. The implementations are provided to arrays at run time, and as a result, the generic interfaces do not appear in the declaration syntax for the Array class. In addition, there are no reference topics for interface members that are accessible only by casting an array to the generic interface type (explicit interface implementations). The key thing to be aware of when you cast an array to one of these interfaces is that members which add, insert, or remove elements throw NotSupportedException.
+
+Type objects provide information about array type declarations. Array objects with the same array type share the same Type object.
+
+Type.IsArray and Type.GetElementType might not return the expected results with Array because if an array is cast to the type Array, the result is an object, not an array. That is, typeof(System.Array).IsArray returns false, and typeof(System.Array).GetElementType returns null.
+
+The Array.Copy method copies elements not only between arrays of the same type but also between standard arrays of different types; it handles type casting automatically.
+
+Some methods, such as CreateInstance, Copy, CopyTo, GetValue, and SetValue, provide overloads that accept 64-bit integers as parameters to accommodate large capacity arrays. LongLength and GetLongLength return 64-bit integers indicating the length of the array.
+
+The Array is not guaranteed to be sorted. You must sort the Array prior to performing operations (such as BinarySearch) that require the Array to be sorted.
+
+Using an Array object of pointers in native code is not supported and will throw a NotSupportedException for several methods.
+
+Properties
+PROPERTIES
+IsFixedSize	
+Gets a value indicating whether the Array has a fixed size.
+
+IsReadOnly	
+Gets a value indicating whether the Array is read-only.
+
+IsSynchronized	
+Gets a value indicating whether access to the Array is synchronized (thread safe).
+
+Length	
+Gets the total number of elements in all the dimensions of the Array.
+
+LongLength	
+Gets a 64-bit integer that represents the total number of elements in all the dimensions of the Array.
+
+Rank	
+Gets the rank (number of dimensions) of the Array. For example, a one-dimensional array returns 1, a two-dimensional array returns 2, and so on.
+
+SyncRoot	
+Gets an object that can be used to synchronize access to the Array.
+
+Methods
+METHODS
+AsReadOnly<T>(T[])	
+Returns a read-only wrapper for the specified array.
+
+BinarySearch(Array, Int32, Int32, Object)	
+Searches a range of elements in a one-dimensional sorted array for a value, using the IComparable interface implemented by each element of the array and by the specified value.
+
+BinarySearch(Array, Int32, Int32, Object, IComparer)	
+Searches a range of elements in a one-dimensional sorted array for a value, using the specified IComparer interface.
+
+BinarySearch(Array, Object)	
+Searches an entire one-dimensional sorted array for a specific element, using the IComparable interface implemented by each element of the array and by the specified object.
+
+BinarySearch(Array, Object, IComparer)	
+Searches an entire one-dimensional sorted array for a value using the specified IComparer interface.
+
+BinarySearch<T>(T[], Int32, Int32, T)	
+Searches a range of elements in a one-dimensional sorted array for a value, using the IComparable<T> generic interface implemented by each element of the Array and by the specified value.
+
+BinarySearch<T>(T[], Int32, Int32, T, IComparer<T>)	
+Searches a range of elements in a one-dimensional sorted array for a value, using the specified IComparer<T> generic interface.
+
+BinarySearch<T>(T[], T)	
+Searches an entire one-dimensional sorted array for a specific element, using the IComparable<T> generic interface implemented by each element of the Array and by the specified object.
+
+BinarySearch<T>(T[], T, IComparer<T>)	
+Searches an entire one-dimensional sorted array for a value using the specified IComparer<T> generic interface.
+
+Clear(Array, Int32, Int32)	
+Sets a range of elements in an array to the default value of each element type.
+
+Clone()	
+Creates a shallow copy of the Array.
+
+ConstrainedCopy(Array, Int32, Array, Int32, Int32)	
+Copies a range of elements from an Array starting at the specified source index and pastes them to another Array starting at the specified destination index. Guarantees that all changes are undone if the copy does not succeed completely.
+
+ConvertAll<TInput,TOutput>(TInput[], Converter<TInput,TOutput>)	
+Converts an array of one type to an array of another type.
+
+Copy(Array, Array, Int32)	
+Copies a range of elements from an Array starting at the first element and pastes them into another Array starting at the first element. The length is specified as a 32-bit integer.
+
+Copy(Array, Array, Int64)	
+Copies a range of elements from an Array starting at the first element and pastes them into another Array starting at the first element. The length is specified as a 64-bit integer.
+
+Copy(Array, Int32, Array, Int32, Int32)	
+Copies a range of elements from an Array starting at the specified source index and pastes them to another Array starting at the specified destination index. The length and the indexes are specified as 32-bit integers.
+
+Copy(Array, Int64, Array, Int64, Int64)	
+Copies a range of elements from an Array starting at the specified source index and pastes them to another Array starting at the specified destination index. The length and the indexes are specified as 64-bit integers.
+
+CopyTo(Array, Int32)	
+Copies all the elements of the current one-dimensional array to the specified one-dimensional array starting at the specified destination array index. The index is specified as a 32-bit integer.
+
+CopyTo(Array, Int64)	
+Copies all the elements of the current one-dimensional array to the specified one-dimensional array starting at the specified destination array index. The index is specified as a 64-bit integer.
+
+CreateInstance(Type, Int32)	
+Creates a one-dimensional Array of the specified Type and length, with zero-based indexing.
+
+CreateInstance(Type, Int32, Int32)	
+Creates a two-dimensional Array of the specified Type and dimension lengths, with zero-based indexing.
+
+CreateInstance(Type, Int32, Int32, Int32)	
+Creates a three-dimensional Array of the specified Type and dimension lengths, with zero-based indexing.
+
+CreateInstance(Type, Int32[])	
+Creates a multidimensional Array of the specified Type and dimension lengths, with zero-based indexing. The dimension lengths are specified in an array of 32-bit integers.
+
+CreateInstance(Type, Int32[], Int32[])	
+Creates a multidimensional Array of the specified Type and dimension lengths, with the specified lower bounds.
+
+CreateInstance(Type, Int64[])	
+Creates a multidimensional Array of the specified Type and dimension lengths, with zero-based indexing. The dimension lengths are specified in an array of 64-bit integers.
+
+Empty<T>()	
+Returns an empty array.
+
+Equals(Object)	
+Determines whether the specified object is equal to the current object.
+
+(Inherited from Object)
+Exists<T>(T[], Predicate<T>)	
+Determines whether the specified array contains elements that match the conditions defined by the specified predicate.
+
+Fill<T>(T[], T)	
+Assigns the given value of type T to each element of the specified array.
+
+Fill<T>(T[], T, Int32, Int32)	
+Assigns the given value of type T to the elements of the specified array which are within the range of startIndex (inclusive) and the next count number of indices.
+
+Find<T>(T[], Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the first occurrence within the entire Array.
+
+FindAll<T>(T[], Predicate<T>)	
+Retrieves all the elements that match the conditions defined by the specified predicate.
+
+FindIndex<T>(T[], Int32, Int32, Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the Array that starts at the specified index and contains the specified number of elements.
+
+FindIndex<T>(T[], Int32, Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the Array that extends from the specified index to the last element.
+
+FindIndex<T>(T[], Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the entire Array.
+
+FindLast<T>(T[], Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the last occurrence within the entire Array.
+
+FindLastIndex<T>(T[], Int32, Int32, Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the Array that contains the specified number of elements and ends at the specified index.
+
+FindLastIndex<T>(T[], Int32, Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the Array that extends from the first element to the specified index.
+
+FindLastIndex<T>(T[], Predicate<T>)	
+Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the entire Array.
+
+ForEach<T>(T[], Action<T>)	
+Performs the specified action on each element of the specified array.
+
+GetEnumerator()	
+Returns an IEnumerator for the Array.
+
+GetHashCode()	
+Serves as the default hash function.
+
+(Inherited from Object)
+GetLength(Int32)	
+Gets a 32-bit integer that represents the number of elements in the specified dimension of the Array.
+
+GetLongLength(Int32)	
+Gets a 64-bit integer that represents the number of elements in the specified dimension of the Array.
+
+GetLowerBound(Int32)	
+Gets the index of the first element of the specified dimension in the array.
+
+GetType()	
+Gets the Type of the current instance.
+
+(Inherited from Object)
+GetUpperBound(Int32)	
+Gets the index of the last element of the specified dimension in the array.
+
+GetValue(Int32)	
+Gets the value at the specified position in the one-dimensional Array. The index is specified as a 32-bit integer.
+
+GetValue(Int32, Int32)	
+Gets the value at the specified position in the two-dimensional Array. The indexes are specified as 32-bit integers.
+
+GetValue(Int32, Int32, Int32)	
+Gets the value at the specified position in the three-dimensional Array. The indexes are specified as 32-bit integers.
+
+GetValue(Int32[])	
+Gets the value at the specified position in the multidimensional Array. The indexes are specified as an array of 32-bit integers.
+
+GetValue(Int64)	
+Gets the value at the specified position in the one-dimensional Array. The index is specified as a 64-bit integer.
+
+GetValue(Int64, Int64)	
+Gets the value at the specified position in the two-dimensional Array. The indexes are specified as 64-bit integers.
+
+GetValue(Int64, Int64, Int64)	
+Gets the value at the specified position in the three-dimensional Array. The indexes are specified as 64-bit integers.
+
+GetValue(Int64[])	
+Gets the value at the specified position in the multidimensional Array. The indexes are specified as an array of 64-bit integers.
+
+IndexOf(Array, Object)	
+Searches for the specified object and returns the index of its first occurrence in a one-dimensional array.
+
+IndexOf(Array, Object, Int32)	
+Searches for the specified object in a range of elements of a one-dimensional array, and returns the index of its first occurrence. The range extends from a specified index to the end of the array.
+
+IndexOf(Array, Object, Int32, Int32)	
+Searches for the specified object in a range of elements of a one-dimensional array, and returns the index of ifs first occurrence. The range extends from a specified index for a specified number of elements.
+
+IndexOf<T>(T[], T)	
+Searches for the specified object and returns the index of its first occurrence in a one-dimensional array.
+
+IndexOf<T>(T[], T, Int32)	
+Searches for the specified object in a range of elements of a one dimensional array, and returns the index of its first occurrence. The range extends from a specified index to the end of the array.
+
+IndexOf<T>(T[], T, Int32, Int32)	
+Searches for the specified object in a range of elements of a one-dimensional array, and returns the index of its first occurrence. The range extends from a specified index for a specified number of elements.
+
+Initialize()	
+Initializes every element of the value-type Array by calling the parameterless constructor of the value type.
+
+LastIndexOf(Array, Object)	
+Searches for the specified object and returns the index of the last occurrence within the entire one-dimensional Array.
+
+LastIndexOf(Array, Object, Int32)	
+Searches for the specified object and returns the index of the last occurrence within the range of elements in the one-dimensional Array that extends from the first element to the specified index.
+
+LastIndexOf(Array, Object, Int32, Int32)	
+Searches for the specified object and returns the index of the last occurrence within the range of elements in the one-dimensional Array that contains the specified number of elements and ends at the specified index.
+
+LastIndexOf<T>(T[], T)	
+Searches for the specified object and returns the index of the last occurrence within the entire Array.
+
+LastIndexOf<T>(T[], T, Int32)	
+Searches for the specified object and returns the index of the last occurrence within the range of elements in the Array that extends from the first element to the specified index.
+
+LastIndexOf<T>(T[], T, Int32, Int32)	
+Searches for the specified object and returns the index of the last occurrence within the range of elements in the Array that contains the specified number of elements and ends at the specified index.
+
+MemberwiseClone()	
+Creates a shallow copy of the current Object.
+
+(Inherited from Object)
+Resize<T>(T[], Int32)	
+Changes the number of elements of a one-dimensional array to the specified new size.
+
+Reverse(Array)	
+Reverses the sequence of the elements in the entire one-dimensional Array.
+
+Reverse(Array, Int32, Int32)	
+Reverses the sequence of a subset of the elements in the one-dimensional Array.
+
+Reverse<T>(T[])	
+Reverses the sequence of the elements in the one-dimensional generic array.
+
+Reverse<T>(T[], Int32, Int32)	
+Reverses the sequence of a subset of the elements in the one-dimensional generic array.
+
+SetValue(Object, Int32)	
+Sets a value to the element at the specified position in the one-dimensional Array. The index is specified as a 32-bit integer.
+
+SetValue(Object, Int32, Int32)	
+Sets a value to the element at the specified position in the two-dimensional Array. The indexes are specified as 32-bit integers.
+
+SetValue(Object, Int32, Int32, Int32)	
+Sets a value to the element at the specified position in the three-dimensional Array. The indexes are specified as 32-bit integers.
+
+SetValue(Object, Int32[])	
+Sets a value to the element at the specified position in the multidimensional Array. The indexes are specified as an array of 32-bit integers.
+
+SetValue(Object, Int64)	
+Sets a value to the element at the specified position in the one-dimensional Array. The index is specified as a 64-bit integer.
+
+SetValue(Object, Int64, Int64)	
+Sets a value to the element at the specified position in the two-dimensional Array. The indexes are specified as 64-bit integers.
+
+SetValue(Object, Int64, Int64, Int64)	
+Sets a value to the element at the specified position in the three-dimensional Array. The indexes are specified as 64-bit integers.
+
+SetValue(Object, Int64[])	
+Sets a value to the element at the specified position in the multidimensional Array. The indexes are specified as an array of 64-bit integers.
+
+Sort(Array)	
+Sorts the elements in an entire one-dimensional Array using the IComparable implementation of each element of the Array.
+
+Sort(Array, Array)	
+Sorts a pair of one-dimensional Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the IComparable implementation of each key.
+
+Sort(Array, Array, IComparer)	
+Sorts a pair of one-dimensional Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the specified IComparer.
+
+Sort(Array, Array, Int32, Int32)	
+Sorts a range of elements in a pair of one-dimensional Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the IComparable implementation of each key.
+
+Sort(Array, Array, Int32, Int32, IComparer)	
+Sorts a range of elements in a pair of one-dimensional Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the specified IComparer.
+
+Sort(Array, IComparer)	
+Sorts the elements in a one-dimensional Array using the specified IComparer.
+
+Sort(Array, Int32, Int32)	
+Sorts the elements in a range of elements in a one-dimensional Array using the IComparable implementation of each element of the Array.
+
+Sort(Array, Int32, Int32, IComparer)	
+Sorts the elements in a range of elements in a one-dimensional Array using the specified IComparer.
+
+Sort<T>(T[])	
+Sorts the elements in an entire Array using the IComparable<T> generic interface implementation of each element of the Array.
+
+Sort<T>(T[], Comparison<T>)	
+Sorts the elements in an Array using the specified Comparison<T>.
+
+Sort<T>(T[], IComparer<T>)	
+Sorts the elements in an Array using the specified IComparer<T> generic interface.
+
+Sort<T>(T[], Int32, Int32)	
+Sorts the elements in a range of elements in an Array using the IComparable<T> generic interface implementation of each element of the Array.
+
+Sort<T>(T[], Int32, Int32, IComparer<T>)	
+Sorts the elements in a range of elements in an Array using the specified IComparer<T> generic interface.
+
+Sort<TKey,TValue>(TKey[], TValue[])	
+Sorts a pair of Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the IComparable<T> generic interface implementation of each key.
+
+Sort<TKey,TValue>(TKey[], TValue[], IComparer<TKey>)	
+Sorts a pair of Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the specified IComparer<T> generic interface.
+
+Sort<TKey,TValue>(TKey[], TValue[], Int32, Int32)	
+Sorts a range of elements in a pair of Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the IComparable<T> generic interface implementation of each key.
+
+Sort<TKey,TValue>(TKey[], TValue[], Int32, Int32, IComparer<TKey>)	
+Sorts a range of elements in a pair of Array objects (one contains the keys and the other contains the corresponding items) based on the keys in the first Array using the specified IComparer<T> generic interface.
+
+ToString()	
+Returns a string that represents the current object.
+
+(Inherited from Object)
+TrueForAll<T>(T[], Predicate<T>)	
+Determines whether every element in the array matches the conditions defined by the specified predicate.
+
+Explicit Interface Implementations
+EXPLICIT INTERFACE IMPLEMENTATIONS
+ICollection.Count	
+Gets the number of elements contained in the Array.
+
+IList.Add(Object)	
+Calling this method always throws a NotSupportedException exception.
+
+IList.Clear()	
+Removes all items from the IList.
+
+IList.Contains(Object)	
+Determines whether an element is in the IList.
+
+IList.IndexOf(Object)	
+Determines the index of a specific item in the IList.
+
+IList.Insert(Int32, Object)	
+Inserts an item to the IList at the specified index.
+
+IList.Item[Int32]	
+Gets or sets the element at the specified index.
+
+IList.Remove(Object)	
+Removes the first occurrence of a specific object from the IList.
+
+IList.RemoveAt(Int32)	
+Removes the IList item at the specified index.
+
+IStructuralComparable.CompareTo(Object, IComparer)	
+Determines whether the current collection object precedes, occurs in the same position as, or follows another object in the sort order.
+
+IStructuralEquatable.Equals(Object, IEqualityComparer)	
+Determines whether an object is equal to the current instance.
+
+IStructuralEquatable.GetHashCode(IEqualityComparer)	
+Returns a hash code for the current instance.
+
+Extension Methods
+EXTENSION METHODS
+Cast<TResult>(IEnumerable)	
+Casts the elements of an IEnumerable to the specified type.
+
+OfType<TResult>(IEnumerable)	
+Filters the elements of an IEnumerable based on a specified type.
+
+AsParallel(IEnumerable)	
+Enables parallelization of a query.
+
+AsQueryable(IEnumerable)	
+Converts an IEnumerable to an IQueryable.
+
+Applies to
+APPLIES TO
+Product	Versions
+.NET	5.0, 6.0 RC 1
+.NET Core	1.0, 1.1, 2.0, 2.1, 2.2, 3.0, 3.1
+.NET Framework	1.1, 2.0, 3.0, 3.5, 4.0, 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8
+.NET Standard	1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 2.0, 2.1
+UWP	10.0
+Xamarin.Android	7.1
+Xamarin.iOS	10.8
+Xamarin.Mac	3.0
+Thread Safety
+Public static (Shared in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.
+
+This implementation does not provide a synchronized (thread safe) wrapper for an Array; however, .NET classes based on Array provide their own synchronized version of the collection using the SyncRoot property.
+
+Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.
+ 
+ Ejercicios 7
+Bueno, veamos algunos ejercicios para practicar lo visto!
+
+1. Hacer un programa que solicite 10 números enteros y los guarde en un vector. Luego recorrer los elementos y determinar e informar cuál es el valor máximo y su posición dentro del vector.
+
+2. Hacer un programa que solicite 10  números enteros y los guarde en un vector. Luego recorrer ese vector para calcular el promedio. Mostrar por pantalla los valores que son mayores al promedio.
+
+3. Hacer un programa que solicite una cadena de caracteres y dos caracteres sueltos (tres ingresos). El programa deberá generar una cadena donde todas las ocurrencias del primer carácter dado hayan sido reemplazadas por el segundo. Mostrar el resultado en pantalla. Ejemplo:
+CADENA FUENTE: “La mar estaba serena"
+CARÁCTER 1: ‘a’ CARÁCTER 2: ‘i’
+CADENA RESULTADO: “Li mir estibi sereni"
+
+4. Una empresa comercializa 15 tipos de artículos y por cada venta realizada genera un registro con los siguientes datos:
+- Número de Artículo (1 a 15)
+- Cantidad Vendida 
+
+Puede haber varios registros para el mismo artículo y el último se indica con número de artículo igual a 0.
+Se pide determinar e informar:
+a) El número de artículo que más se vendió en total.
+b) Los números de artículos que no registraron ventas.
+c) Cuantas unidades se vendieron del número de artículo 10.
+
+
+
+
