@@ -1117,6 +1117,23 @@ Clase 7:
 Vectores
 Comenzamos con Vectores. Un tipo de variable especial, dimensional, que nos permite guardar muchos valores bajo un mismo pseudónimo de variable...
 
+https://www.youtube.com/watch?v=B-KRYhDRnt0
+
+Ejercicios resueltos
+Como siempre, una serie de ejercicios para practicar lo aprendido.
+00:00 Inicio.
+01:10 Ejercicio 1. Guardar 10 números y mostrar la suma.
+06:07 Ejercicio 2. Guardar 50 números. Buscar máximo y posición.
+10:00 Ejercicio 3. Guardar 100 números. Calcular promedio, mostrar los mayores.
+12:30 Ejercicio 4. Guardar 20 números. Determinar si está ordenado.
+16:58 Ejercicio 5. Vector de valores Char. Intercambiar caracteres dados.
+30:12 Ejercicio 6. Guardar 10 números y buscar repetidos.
+37:23 Ejercicio 7. Registros de ventas. Lote y puntos a, b y c.
+57:32 Ejercicio 8. Ordenar Vector.
+
+https://www.youtube.com/watch?v=AYVpDkVMdVg
+
+https://www.youtube.com/watch?v=-MywsWPHmSI
 
 Array Class
 Definition
@@ -1735,7 +1752,21 @@ a) El número de artículo que más se vendió en total.
 b) Los números de artículos que no registraron ventas.
 c) Cuantas unidades se vendieron del número de artículo 10.
 
+ https://www.youtube.com/watch?v=1BeeaZ416vc Ejercicio 1
+ 
+ https://www.youtube.com/watch?v=dMo3zl6-hKU Ejercicio 2
+ 
+ https://www.youtube.com/watch?v=EqK7dppFR2M Ejercicio 3
+ 
+ https://www.youtube.com/watch?v=_8BG8TKj1Ss Ejercicio 4
+ 
+ Cadenas de caracteres
+Bueno, como ya habremos hablado, este es un manejo de cadenas a bajo nivel, bien manual; pero entenderlo nos da una amplitud mayor sobre el funcionamiento de ciertas cosas en programación. Es completamente opcional, aunque te recomiendo que lo chequees. Es un tema que vemos obligatoriamente en la carrera de programación en la uni.
+ 
+ 
+ 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Clase 8:
  
  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
