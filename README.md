@@ -1093,6 +1093,23 @@ Finalmente, como siempre, una serie de ejercicios resueltos para ir viendo cómo
 
 https://www.youtube.com/watch?v=HnFENssh9-I&list=PLQRFzsIQFmxrqL5ViA0k3rsR5H0oNKYxE&index=19
 
+Ejercicios 6
+Les dejo algunos ejercicios de ciclos combinados. Ya son un poco más largos y complejos, así que serán menos así tratan de hacerlos en la semana. Lo que sí, analicen bien ya que tendrán que determinar qué tipo de combinación de ciclos deben aplicar, es decir, si for con for, o for con while, etc.
+
+1. Hacer un programa para ingresar 10 números. El mismo debe analizar y mostrar por pantalla cuántos de esos números son primos.
+
+2. Se dispone de una lista de 5 listas de números enteros separados entre ellos por ceros. Se pide determinar e informar:
+
+El número de grupo con mayor porcentaje de números impares respecto al total de números que forman el grupo.
+Informar cuántos grupos están formados por todos números ordenados de mayor a menor.
+3. Hacer un programa para recibir listas de números positivos que están separadas entre sí por un cero. El fin de la carga se notifica con un número negativo. Luego mostrar cuántos números tiene cada lista.
+
+https://www.youtube.com/watch?v=k12fjsyjah0 Ejercicio 1
+
+https://www.youtube.com/watch?v=VVictUqVRtI Ejercicio 2
+
+https://www.youtube.com/watch?v=efe2ud9rT7k Ejercicio 3
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Clase 7:
@@ -1718,6 +1735,20 @@ a) El número de artículo que más se vendió en total.
 b) Los números de artículos que no registraron ventas.
 c) Cuantas unidades se vendieron del número de artículo 10.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+Trabajo Práctico
+Hacer un programa que permita ingresar una lista de números que corta cuando se ingresa un cero. A partir de dichos datos informar:
 
+a. El mayor de los números pares.
+b. La cantidad de números impares.
+c. El menor de los números primos.
+
+Nota: evaluar el uso de una función que analice si un número dado es primo o no y que devuelva true o false según corresponda.
+
+Entregar carpeta comprimida del proyecto con el TP resuelto.
+Poner nombre tanto al proyecto como al zip: TP1_Apellido >> por ejemplo: TP1_SarFernandez
