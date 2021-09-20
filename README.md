@@ -1768,6 +1768,39 @@ Bueno, como ya habremos hablado, este es un manejo de cadenas a bajo nivel, bien
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Clase 8:
  
+ Módulo 8 - Videos
+Les dejo un video en el que explico el concepto de funciones de manera detallada junto a todas sus particularidades. Scope, parámetros por valor, por referencia, tipos, return, etc! 
+ 
+ https://www.youtube.com/watch?v=7X6qzA7pssw
+ 
+ Y por otro lado, una serie de ejercicios resueltos. Todo en diagrama, pero con la práctica que veamos en la clase, lo pueden codificar e ir probando todo! Adelante!
+ 
+ https://www.youtube.com/watch?v=jbgGa96R7Vc
+ 
+ Ejercicios 8
+En este caso, la idea va a ser armar una función que resuelva algo y luego armar un main que interactúe con una persona para pedir y mostrar datos pero que llame a esa función para resolver lo planteado. Vamos?
+
+1. Hacer una función llamada “producto” que reciba dos números enteros y que devuelva el producto de ambos. Luego hacer un programa que pida el precio de un artículo y la cantidad vendida y muestre por pantalla el monto total a pagar. Usar la función.
+
+2. Hacer una función llamada “par” que reciba un número entero y devuelva 1 si es par o cero si no lo es. Hacer un programa para ingresar 20 números y mostrar por pantalla cuántos son pares.
+
+3. Hacer una función llamada “primo” que reciba un número entero y devuelva 1 si el número es primo o cero si no lo es. Hacer un programa para ingresar números. El lote corta cuando se ingresa un número cero. Informar el promedio teniendo en cuenta sólo los números primos.
+
+4. Hacer una función de tipo void (porque no va a devolver nada) llamada “positivoNegativoCero” que reciba un número por valor y una variable por referencia. Que analice el número y escriba variable recibida por referencia con:
+
+a. 1 si el número es positivo.
+b. -1 si el número es negativo.
+c. 0 si el número es cero.
+
+https://www.youtube.com/watch?v=ByisntHXPi8 Ejercicio 1
+ 
+ https://www.youtube.com/watch?v=aPblwCG9SHA Ejercicio 2
+ 
+ https://www.youtube.com/watch?v=rdcTLXQayrE Ejercicio 3
+ 
+ https://www.youtube.com/watch?v=LE0QTaToyCE Ejercicio 4
+ 
+ 
  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
